@@ -18,6 +18,13 @@ activate :livereload
 # pretty urls
 activate :directory_indexes
 
+# webpack
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+  source: ".tmp/dist",
+  latency: 1
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 # Per-page layout changes
