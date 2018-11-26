@@ -12,20 +12,22 @@ Slim::Engine.set_options shortcut: {
   '.' => {tag: 'div', attr: 'class'}
 }
 
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
-
+# live reload dev changes
 activate :livereload
+
+# pretty urls
+activate :directory_indexes
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
-
 # Per-page layout changes
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 page "/partials/*", layout: false
 page "/admin/*", layout: false
+# With alternative layout
+# page '/path/to/file.html', layout: 'other_layout'
 
 activate :blog do |blog|
   blog.permalink = "news/{year}/{title}.html"
@@ -33,12 +35,8 @@ activate :blog do |blog|
   blog.layout = "news-detail"
 end
 
-# With alternative layout
-# page '/path/to/file.html', layout: 'other_layout'
-
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
-
 # proxy product.yml files to product.html 
 data.products.each do |product|
   # product is an array: [filename, {data}]
@@ -51,10 +49,6 @@ end
 # Helpers
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
-
-# pretty urls
-activate :directory_indexes
-
 helpers do
   #helper to set background images with asset hashes in a style attribute
   def background_image(image)
@@ -85,7 +79,12 @@ configure :build do
   # Use Gzip
   activate :gzip
 
+  # put this in the build step only since it really
+  # slows things down in development
+  activate :autoprefixer do |prefix|
+    prefix.browsers = "last 2 versions"
+  end
+
   #Use asset hashes to use for caching
   #activate :asset_hash
-
 end
