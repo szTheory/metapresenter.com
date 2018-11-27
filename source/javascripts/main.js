@@ -1,4 +1,4 @@
-import '../stylesheets/all.css.scss'
+import '../stylesheets/all.scss'
 
 $(document).ready(function () {
   console.log("document.ready()")
