@@ -80,6 +80,9 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript, :ignore => "**/admin/**", compressor: ::Uglifier.new(mangle: true, compress: { drop_console: true }, output: {comments: :none})
 
+  # Image optimization on build
+  activate :imageoptim 
+
   # Use Gzip
   activate :gzip
 
