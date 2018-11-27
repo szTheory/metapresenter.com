@@ -1,11 +1,11 @@
 const webpack = require('webpack');
 const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const devMode = process.env.NODE_ENV !== 'production'
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
   entry: {
-    main: path.resolve('./source/javascripts/main.js'),
+    application: path.resolve('./source/javascripts/application.js'),
   },
 
   output: {
@@ -38,12 +38,27 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.css$/,
         use: [
           'style-loader', // inject CSS to page
           'css-loader', // translates CSS into CommonJS modules
           'postcss-loader', // Run post css actions
-          'sass-loader', // compiles Sass to CSS
+        ],
+      },
+      {
+        test: /\.(sa|sc)ss$/,
+        use: [
+          'style-loader', // inject CSS to page
+          'css-loader', // translates CSS into CommonJS modules
+          'postcss-loader', // Run post css actions
+          {
+            loader: 'sass-loader', // compiles Sass to CSS
+            options: {
+              "includePaths": [
+                require('path').resolve(__dirname, 'node_modules')
+              ]
+            }
+          }
         ],
       }
       

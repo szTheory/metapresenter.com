@@ -1,6 +1,4 @@
-%li
-  %h2 #{message}
-  .container-fluid
-    .row.justify-content-center
-      .col-8
-        = image_tag 'images/placeholder.jpg', class: 'img-fluid'
+%li.row.justify-content-center
+  .col-6
+    %h2 #{message}
+    = image_tag image_path, class: 'img-fluid'

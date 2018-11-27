@@ -10,12 +10,17 @@ Slim::Engine.set_options shortcut: {
   '.' => {tag: 'div', attr: 'class'}
 }
 
-# live reload dev changes
-activate :livereload
-
-# pretty urls
-activate :directory_indexes
-
+activate :livereload # live reload dev changes
+activate :directory_indexes # pretty urls
+activate :syntax #syntax highlighting
+activate :minify_html #minifies whitespace around HTML via Htmlcompressor
+# Add browser-specific prefixes to stylesheet for compatibility with newest CSS features
+# NOTE: used to put this in build since it slowed down dev,
+# but it seems to be fast enough with webpacker for now
+activate :bh #bootstrap helpers
+activate :autoprefixer do |prefix|
+  prefix.browsers = "last 2 versions"
+end
 # webpack
 activate :external_pipeline,
   name: :webpack,
@@ -77,12 +82,6 @@ configure :build do
 
   # Use Gzip
   activate :gzip
-
-  # put this in the build step only since it really
-  # slows things down in development
-  activate :autoprefixer do |prefix|
-    prefix.browsers = "last 2 versions"
-  end
 
   #Use asset hashes to use for caching
   #activate :asset_hash
