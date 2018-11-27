@@ -17,5 +17,6 @@ title: MetaPresenter
         = partial 'selling_point', locals: {message: 'Create a presenter class', image_path: 'images/placeholder.jpg'}
         = partial 'selling_point', locals: {message: 'Write clean views with `presenter`', image_path: 'images/placeholder.jpg'}
         = partial 'selling_point', locals: {message: 'Test the presenter class', image_path: 'images/placeholder.jpg'}
-      %button.btn.btn-primary
+        
+      = link_to '/readme', class: 'btn btn-primary' do
         Get Started

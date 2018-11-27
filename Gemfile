@@ -60,6 +60,7 @@ gem 'middleman-pry' #pry in Middleman console (like pry-rails)
 # TEMPLATES
 gem 'hamlit' #faster haml
 gem 'slim'
+gem 'redcarpet' #markdown
 
 # PLATFORM COMPAT.
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]

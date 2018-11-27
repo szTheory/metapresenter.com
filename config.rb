@@ -10,6 +10,13 @@ Slim::Engine.set_options shortcut: {
   '.' => {tag: 'div', attr: 'class'}
 }
 
+# When using RedCarpet, Middleman will handle links and 
+# image tags with its own helpers, meaning things like 
+# :relative_links and :asset_hash will do what you expect. 
+# However, the default Markdown engine is 
+# Kramdown because it's easier to install.
+set :markdown_engine, :redcarpet
+
 activate :livereload # live reload dev changes
 activate :directory_indexes # pretty urls
 activate :syntax #syntax highlighting
