@@ -1,3 +1,5 @@
+import '../stylesheets/all.css.scss'
+
 $(document).ready(function () {
   console.log("document.ready()")
   var nav_button = document.querySelector('.nav-button');
