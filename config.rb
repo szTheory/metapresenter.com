@@ -17,7 +17,6 @@ activate :minify_html #minifies whitespace around HTML via Htmlcompressor
 # Add browser-specific prefixes to stylesheet for compatibility with newest CSS features
 # NOTE: used to put this in build since it slowed down dev,
 # but it seems to be fast enough with webpacker for now
-activate :bh #bootstrap helpers
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -63,6 +62,10 @@ helpers do
   #helper to set background images with asset hashes in a style attribute
   def background_image(image)
     "background-image: url('" << image_path(image) << "')"
+  end
+
+  def icon(name)
+    content_tag(:i, '', class: "fas fa-#{name}")
   end
 
   def markdown(content)

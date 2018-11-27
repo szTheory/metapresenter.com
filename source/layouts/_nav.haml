@@ -1,0 +1,16 @@
+%nav.navbar.navbar-expand-lg
+  = link_to '#', class: 'navbar-brand' do
+    = image_tag 'images/logo.jpg', height: 30, width: 150
+  %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
+    = icon('bars')
+  #navbarNav.collapse.navbar-collapse
+    %ul.navbar-nav
+      %li.nav-item
+        = link_to '#', class: 'nav-link' do
+          Readme
+      %li.nav-item
+        = link_to '#', class: 'nav-link' do
+          Docs
+      %li.nav-item
+        = link_to '#', class: 'nav-link' do
+          Github

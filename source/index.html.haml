@@ -6,9 +6,11 @@ title: MetaPresenter
   .row.justify-content-center
     .col.text-center
       .container-fluid
-        .row.justify-content-center
-          .col-8
+        .row
+          .col
             %h1 MetaPresenter
+        .row.justify-content-center
+          .col-4
             = image_tag 'images/placeholder.jpg', class: 'img-fluid'
       %ul.container-fluid
         = partial 'selling_point', locals: {message: 'Include in your controller', image_path: 'images/placeholder.jpg'}
