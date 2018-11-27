@@ -4,9 +4,12 @@ title: MetaPresenter
 
 .container
   .row
-    .col
+    .col.text-center
       %h1 MetaPresenter
       %ul
         = partial 'selling_point', locals: {message: 'Include in your controller', image: 'images/placeholder.jpg'}
         = partial 'selling_point', locals: {message: 'Create a presenter class', image: 'images/placeholder.jpg'}
         = partial 'selling_point', locals: {message: 'Write clean views with `presenter`', image: 'images/placeholder.jpg'}
+        = partial 'selling_point', locals: {message: 'Test the presenter class', image: 'images/placeholder.jpg'}
+      %button.btn.btn-primary
+        Get Started
