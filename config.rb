@@ -16,6 +16,7 @@ Slim::Engine.set_options shortcut: {
 # However, the default Markdown engine is 
 # Kramdown because it's easier to install.
 set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
 
 activate :livereload # live reload dev changes
 activate :directory_indexes # pretty urls
