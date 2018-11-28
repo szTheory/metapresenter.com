@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const path = require('path');
-// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
@@ -20,12 +19,6 @@ module.exports = {
   },
 
   plugins: [
-    // new MiniCssExtractPlugin({
-    //   // Options similar to the same options in webpackOptions.output
-    //   // both options are optional
-    //   filename: devMode ? '[name].css' : '[name].[hash].css',
-    //   chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
-    // })
     new webpack.ProvidePlugin({
       $: "jquery",
       // jQuery: "jquery",
@@ -38,6 +31,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.erb$/,
+        enforce: 'pre',
+        loader: 'rails-erb-loader',
+        options: {
+          runner: 'ruby',
+          engine: 'erb',
+        }
+      },
+      {
         test: /\.css$/,
         use: [
           'style-loader', // inject CSS to page
@@ -46,7 +48,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(sa|sc)ss$/,
+        test: /\.(sa|sc)ss(\..+)?$/,
         use: [
           'style-loader', // inject CSS to page
           'css-loader', // translates CSS into CommonJS modules
@@ -61,42 +63,6 @@ module.exports = {
           }
         ],
       }
-      
-      // {
-      //   test: /\.(scss)$/,
-      //   use: [{
-      //     loader: 'style-loader', // inject CSS to page
-      //   }, {
-      //     loader: 'css-loader', // translates CSS into CommonJS modules
-      //   }, {
-      //     loader: 'postcss-loader', // Run post css actions
-      //     options: {
-      //       plugins: function () { // post css plugins, can be exported to postcss.config.js
-      //         return [
-      //           require('precss'),
-      //           require('autoprefixer')
-      //         ];
-      //       }
-      //     }
-      //   }, {
-      //     loader: 'sass-loader' // compiles Sass to CSS
-      //   }]
-      // },
     ]
   }
-
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /.*\.scss$/,
-  //       loader: "sass-loader" // compiles Sass to CSS
-  //       // loader: ExtractTextPlugin.extract(
-  //       //   "style",
-  //       //   "css!sass?sourceMap&includePaths[]=" + __dirname + "/node_modules"
-  //       // )
-  //     },
-  //     // Load plain-ol' vanilla CSS
-  //     { test: /\.css$/, loader: "style!css" },
-  //   ],
-  // }
 };
