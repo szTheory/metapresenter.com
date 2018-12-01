@@ -5,12 +5,7 @@
     = icon('bars')
   #navbarNav.collapse.navbar-collapse
     %ul.navbar-nav
-      %li.nav-item
-        = link_to '/readme', class: 'nav-link' do
-          Readme
-      %li.nav-item
-        = link_to 'https://www.rubydoc.info/github/szTheory/meta-presenter/master', class: 'nav-link' do
-          Docs
-      %li.nav-item
-        = link_to 'https://github.com/szTheory/meta_presenter', class: 'nav-link' do
-          Github
+      - data.settings.navigation.nav_items.each do | nav_item |
+        %li.nav-item
+          = link_to nav_item.path, class: 'nav-link' do
+            #{nav_item.label}

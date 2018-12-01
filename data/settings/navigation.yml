@@ -1,5 +1,4 @@
 nav_items: 
-  - {label: 'Home', path: '/'}
-  # - {label: 'Products', path: '/products/'}
-  # - {label: 'News', path: '/news'}
-
+  - {label: 'Readme', path: '/readme'}
+  - {label: 'Docs', path: 'https://www.rubydoc.info/github/szTheory/meta-presenter/master'}
+  - {label: 'Github', path: 'https://github.com/szTheory/meta_presenter'}
