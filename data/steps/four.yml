@@ -1,0 +1,12 @@
+message: 'Test your presenter class'
+language: ruby
+code: |
+  describe Pages::HomePresenter do
+    let(:user) { User.new(name: "Mario") }
+    let(:controller) { OpenStruct.new(current_user: user) }
+    let(:presenter) { described_class.new(controller) }
+    describe '#hello' do
+      subject { presenter.hello }
+      it { is_expected.to eql("Hello, Mario") }
+    end
+  end

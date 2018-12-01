@@ -77,7 +77,7 @@ helpers do
   end
 
   def markdown(content)
-     Tilt['markdown'].new { content }.render
+    Tilt::RedcarpetTemplate.new { content }.render
   end
 end
 

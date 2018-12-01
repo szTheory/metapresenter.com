@@ -3,9 +3,9 @@ title: MetaPresenter
 ---
 
 .container
-  .row.justify-content-center
-    .col.text-center
-      .container-fluid
+  .row
+    .col
+      .container-fluid.text-center
         .row
           .col
             %h1 MetaPresenter
@@ -13,10 +13,13 @@ title: MetaPresenter
           .col-4
             = image_tag 'images/placeholder.jpg', class: 'img-fluid'
       %ul.container-fluid
-        = partial 'selling_point', locals: {message: 'Include in your controller', image_path: 'images/placeholder.jpg'}
-        = partial 'selling_point', locals: {message: 'Create a presenter class', image_path: 'images/placeholder.jpg'}
-        = partial 'selling_point', locals: {message: 'Write clean views with `presenter`', image_path: 'images/placeholder.jpg'}
-        = partial 'selling_point', locals: {message: 'Test the presenter class', image_path: 'images/placeholder.jpg'}
+        = partial 'selling_point', locals: {message: data.steps.one.message, code_block: data.steps.one.code}
+        = partial 'selling_point', locals: {message: data.steps.two.message, code_block: data.steps.two.code}
+        = partial 'selling_point', locals: {message: data.steps.three.message, code_block: data.steps.three.code}
+        = partial 'selling_point', locals: {message: data.steps.four.message, code_block: data.steps.four.code}
         
-      = link_to '/readme', class: 'btn btn-primary' do
-        Get Started
+      .container-fluid.text-center
+        .row
+          .col
+            = link_to '/readme', class: 'btn btn-primary' do
+              Get Started
