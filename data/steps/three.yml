@@ -2,5 +2,5 @@ message: 'Write clean views with presenter object'
 language: Haml
 code: |
   %h1 Home
-  %p #{greeting}
-  %p Last login #{distance_of_time_in_words_to_now(last_login_at)}
+  %p #{presenter.greeting}
+  %p Last login #{distance_of_time_in_words_to_now(presenter.last_login_at)}
