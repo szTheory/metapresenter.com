@@ -10,9 +10,6 @@ gem 'middleman-minify-html' #minify HTML
 # TODO: relies on Middleman ~> 3.2, try to update gem
 # gem 'middleman-spellcheck' #run spellchecker after build with aspell
 
-# MIDDLEMAN BOOTSTRAP
-# gem 'bh', '~> 1.3' #middleman bootstrap helpers
-
 # MIDDLEMAN IMAGES
 gem 'middleman-favicon-maker', '~> 4.1' #favicon
 # TODO: fix gem, gives this error on `middleman server`
@@ -29,6 +26,10 @@ gem 'middleman-sitemap-ping' #ping search engines (Google/Bing) with sitemap URL
 gem 'middleman-google-analytics' #google analytics
 gem 'middleman-aria_current' #current_link_to for screen reader nav support
 
+# MIDDLEMAN HEADLESS CMS
+gem 'middleman-dato' #load content from DatoCMS
+# gem 'contentful_middleman' #load content from Contentful
+
 # MIDDLEMAN SITE-SPECIFIC
 gem 'middleman-syntax' #syntax highlighting on your website
 
@@ -36,6 +37,10 @@ gem 'middleman-syntax' #syntax highlighting on your website
 gem 'middleman-livereload' #development life-reload code to the site
 gem 'middleman-pry' #pry in Middleman console (like pry-rails)
 
+# TEMPLATES
+gem 'hamlit' #faster haml
+gem 'slim'
+gem 'redcarpet' #markdown
 
 # MIDDLEMAN USEFUL
 # gem 'middleman-fragment-caching' #fragment caching to reduce build times for big sites
@@ -53,14 +58,8 @@ gem 'middleman-pry' #pry in Middleman console (like pry-rails)
 # gem 'middleman-navtree' #generate navtrees based on site structure
 # gem 'surfnperf' #page performance data
 
-# MIDDLEMAN HEADLESS CMS
-# gem 'contentful_middleman' #load content from Contentful
-# gem 'middleman-dato' #load content from Dato
-
-# TEMPLATES
-gem 'hamlit' #faster haml
-gem 'slim'
-gem 'redcarpet' #markdown
+# MIDDLEMAN BOOTSTRAP
+# gem 'bh', '~> 1.3' #middleman bootstrap helpers
 
 # PLATFORM COMPAT.
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]

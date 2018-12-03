@@ -1,25 +1,19 @@
----
-title: MetaPresenter
----
-
 .container
   .row
     .col
       .container-fluid.text-center
         .row
           .col
-            %h1 MetaPresenter
+            %h1 #{dato.application.name}
         .row.justify-content-center
           .col-4.col-lg-3
             = image_tag 'images/placeholder.jpg', class: 'img-fluid'
       %ul.container-fluid
-        = partial 'selling_point', locals: {message: data.steps.one.message, code_block: data.steps.one.code}
-        = partial 'selling_point', locals: {message: data.steps.two.message, code_block: data.steps.two.code}
-        = partial 'selling_point', locals: {message: data.steps.three.message, code_block: data.steps.three.code}
-        = partial 'selling_point', locals: {message: data.steps.four.message, code_block: data.steps.four.code}
+        - dato.home.steps.each do |step|
+          = partial 'selling_point', locals: {message: step.message, code_block: step.code, syntax_language: step.syntax_language}
         
       .container-fluid.text-center
         .row
           .col
             = link_to '/readme', class: 'btn btn-primary' do
-              Get Started
+              #{dato.home.start_button}

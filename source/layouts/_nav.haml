@@ -5,7 +5,7 @@
     = icon('bars')
   #navbarNav.collapse.navbar-collapse
     %ul.navbar-nav
-      - data.settings.navigation.nav_items.each do | nav_item |
+      - dato.nav.nav_items.each do |nav_item|
         %li.nav-item
           = link_to nav_item.path, class: 'nav-link' do
             #{nav_item.label}

@@ -1,4 +1,0 @@
-nav_items: 
-  - {label: 'Readme', path: '/readme'}
-  - {label: 'Docs', path: 'https://www.rubydoc.info/github/szTheory/meta-presenter/master'}
-  - {label: 'Github', path: 'https://github.com/szTheory/meta_presenter'}

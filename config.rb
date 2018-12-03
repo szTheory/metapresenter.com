@@ -18,7 +18,6 @@ Slim::Engine.set_options shortcut: {
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, smartypants: true
 
-activate :livereload # live reload dev changes
 activate :directory_indexes # pretty urls
 activate :syntax #syntax highlighting
 activate :minify_html #minifies whitespace around HTML via Htmlcompressor
@@ -28,6 +27,7 @@ activate :minify_html #minifies whitespace around HTML via Htmlcompressor
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
+activate :dato, live_reload: true
 # webpack
 activate :external_pipeline,
   name: :webpack,
@@ -42,7 +42,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 page "/partials/*", layout: false
-page "/admin/*", layout: false
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
@@ -84,12 +83,17 @@ end
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
+# enable livereload on development
+configure :development do
+  activate :livereload
+end
+
 configure :build do
   # Minify css on build
   activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript, ignore: "**/admin/**", compressor: ::Uglifier.new(mangle: true, compress: {drop_console: true}, output: {comments: :none})
+  activate :minify_javascript, compressor: ::Uglifier.new(mangle: true, compress: {drop_console: true}, output: {comments: :none})
 
   # # Image optimization on build
   # activate :imageoptim 
