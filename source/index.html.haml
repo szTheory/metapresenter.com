@@ -2,12 +2,28 @@
   .row
     .col
       .container-fluid.text-center
-        .row
-          .col
-            %h1 #{dato.application.name}
+        / .row
+        /   .col
+        /     %h1 #{dato.application.name}
         .row.justify-content-center
-          .col-4.col-lg-3
-            = image_tag 'images/placeholder.jpg', class: 'img-fluid'
+          / .col-4.col-lg-3
+          #animated-text-container.col
+            %p
+              %span Ruby
+              %span Rails
+            %p
+              %span Rails
+              %span Presenter
+            %p
+              %span Presenter
+              %span Classes
+        .row.justify-content-center
+          .col
+            %h3 It's time to beautify your Rails views
+            %p
+              MetaPresenter is a
+              %strong 100% free
+              Ruby gem that gives you access to the powerful presenter pattern in your Rails contollers. Pull yourself out of the vortex of messy Rails. Start writing beautiful frontend code that will streamline your work and &ldquo;wow&rdquo; your coworkers. 
       .container-fluid
         .row.justify-content-center
           .col.col-lg-8
