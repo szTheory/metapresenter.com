@@ -29,6 +29,22 @@ h3 {
 	@extend .align-middle;
 }
 
+.upcase {
+	text-transform: uppercase;
+}
+
+.learnmore {
+	// height: 17px;
+	// width: 201px;
+	color: #787A8E;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 3.73px;
+	line-height: 17px;
+	// text-align: center;
+}
+
 p {
 	color: #84858E;
 
