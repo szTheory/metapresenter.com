@@ -8,6 +8,16 @@
         .row.justify-content-center
           .col-4.col-lg-3
             = image_tag 'images/placeholder.jpg', class: 'img-fluid'
+      .container-fluid
+        .row.justify-content-center
+          .col.col-lg-8
+            %p To install just add to your Gemfile, then bundle
+            = code('ruby') do
+              \#clean view presenter classes
+              gem 'meta_presenter' 
+            = code('sh') do
+              $ bundle install
+
       %ul.container-fluid
         - dato.home.steps.each do |step|
           = partial 'selling_point', locals: {message: step.message, code_block: step.code, syntax_language: step.syntax_language}
