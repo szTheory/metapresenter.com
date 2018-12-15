@@ -30,7 +30,7 @@
             .instructions.text-left
               %p To install just add to your Gemfile, then bundle
               = code('ruby') do
-                \#clean view presenter classes
+                \# presenter classes for views
                 gem 'meta_presenter' 
               = code('sh') do
                 $ bundle install
@@ -38,9 +38,13 @@
           .col.col-lg-4
             %p.upcase.learnmore Learn More
 
+.container-fluid.container-light
+  .row
+    .col
       .container-fluid.text-center
         .row.justify-content-center
           .col.col-lg-8
+            %h2.shadow.elegantshadow.upcase MetaPresenter
             %h3 How does it work?
             %p
               For each controller/action pair you get a controller class in app/presenters that you can use in your views with presenter.method_name. There's even a DSL for method delegation on objects to reduce boilerplate.

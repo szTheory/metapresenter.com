@@ -8,6 +8,6 @@
     %script{crossorigin: "anonymous", defer: "defer", integrity: "sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0", src: "https://use.fontawesome.com/releases/v5.5.0/js/all.js"}
     = javascript_include_tag 'application'
   %body
+    = partial 'layouts/nav'
     %main.main-content
-      = partial 'layouts/nav'
       = yield

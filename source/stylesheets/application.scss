@@ -3,10 +3,16 @@
 
 // app-specific styling
 @import "animated_text";
+@import "shadow_text";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Prompt');
 
-h2 {
+.container-light {
+	background-color: white;
+}
+
+h1, h2, h4 {
 	color: white;
 }
 
@@ -45,9 +51,45 @@ h3 {
 	// text-align: center;
 }
 
+main {
+	:not(code) ul li a:empty,
+	:not(code) ol li a:empty,
+	:not(code) a:empty {
+		// height: 18px;
+		// width: 100px;
+		color: #18181A;
+		font-family: 'Prompt', sans-serif;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 2.3px;
+		line-height: 18px;
+		text-transform: uppercase;
+		border-bottom: 2px solid #cf2c44;
+
+		&:after {
+			content: '▶';
+			font-size: 0.55em;
+			position: relative;
+			bottom: 2px;
+			left: 4px;
+		}
+	}
+	#readme a {
+		color: white;
+	}
+}
+
 p {
 	color: #84858E;
+}
+#readme {
+	:not(code) ul li,
+	:not(code) ol li {
+		color: #84858E;
+	}
+}
 
+p {
 	strong {
 		color: white;
 		border-bottom: 1px solid white;
