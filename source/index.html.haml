@@ -7,7 +7,7 @@
         /     %h1 #{dato.application.name}
         .row.justify-content-center
           / .col-4.col-lg-3
-          #animated-text-container.col
+          #animated-text-container.col.mb-2
             %p
               %span Ruby
               %span Rails
@@ -17,8 +17,9 @@
             %p
               %span Presenter
               %span Classes
-        .row.justify-content-center
+        .row.justify-content-center.mt-4
           .col.col-lg-8
+            = image_tag 'images/hero-title.png', class: 'img-fluid mb-3'
             %h3 It's time to beautify your Rails views
             %p
               MetaPresenter is a
