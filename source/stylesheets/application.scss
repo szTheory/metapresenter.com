@@ -12,6 +12,20 @@
 	background-color: white;
 }
 
+#logo {
+	width: 152px;
+	height: 15px;
+}
+
+#burger {
+	width: 6px;
+	height: 32px;
+}
+
+#hero-title {
+	width: 300px;
+}
+
 h1, h2, h4 {
 	color: white;
 }
@@ -21,18 +35,27 @@ h3 {
 	color: #FFF;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
-	font-size: 16px;
+	
 	font-weight: 300;
 	letter-spacing: 3.53px;
 	line-height: 1.4em;
 	vertical-align: middle;
 	display: inline-block;
 	text-align: center;
-
 	background-color: #DB4355;
 	padding: 10px 16px;
 
 	@extend .align-middle;
+
+	font-size: 11px;
+	padding: 10px 30px;
+}
+
+@include media-breakpoint-up(sm) {
+  h3 {
+  	font-size: 16px;
+  	padding: 10px 16px;
+  }
 }
 
 .upcase {
