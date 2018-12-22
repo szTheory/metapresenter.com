@@ -48,7 +48,7 @@ h3 {
 	@extend .align-middle;
 
 	font-size: 11px;
-	padding: 10px 30px;
+	padding: 5px 30px;
 }
 
 @include media-breakpoint-up(sm) {
@@ -102,9 +102,6 @@ main {
 	}
 }
 
-p {
-	color: #84858E;
-}
 #readme {
 	:not(code) ul li,
 	:not(code) ol li {
@@ -113,10 +110,27 @@ p {
 }
 
 p {
+	color: #84858E;	
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;	
+	font-weight: 300;	
+	// line-height: 14px;
+
 	strong {
 		color: white;
+		font-weight: bold;
 		border-bottom: 1px solid white;
 	}
+}
+
+p.non-mobile {
+	display: none;
+}
+
+@include media-breakpoint-up(sm) {
+  p.non-mobile {
+  	display: default;
+  }
 }
 
 .nav-link {
