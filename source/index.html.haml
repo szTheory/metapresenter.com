@@ -30,10 +30,9 @@
 
         .row.justify-content-center
           .col.col-lg-4
-            .instructions.text-left
-              %p To install just add to your Gemfile, then bundle
+            #install-instructions.text-left
+              %p.text-center To install just add to your Gemfile and bundle:
               = code('ruby') do
-                \# presenter classes for views
                 gem 'meta_presenter' 
               = code('sh') do
                 $ bundle install
