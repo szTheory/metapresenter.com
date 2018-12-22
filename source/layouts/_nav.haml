@@ -1,8 +1,9 @@
 %nav.navbar.navbar-expand-lg
   = link_to '/', class: 'navbar-brand' do
-    = image_tag 'images/logo.jpeg'
+    = image_tag 'images/logo.png', width: 152, height: 15
   %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
-    = icon('bars')
+    / = icon('bars')
+    = image_tag 'images/burger.png', width: 6, height: 32
   #navbarNav.collapse.navbar-collapse
     %ul.navbar-nav
       - dato.nav.nav_items.each.with_index do |nav_item, i|
