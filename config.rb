@@ -67,8 +67,13 @@ page "/partials/*", layout: false
 # https://middlemanapp.com/basics/helper-methods/
 helpers do
   #helper to set background images with asset hashes in a style attribute
-  def background_image(image)
-    "background-image: url('" << image_path(image) << "')"
+  def background_image(*images)
+    # images = images.is_a?(String) ? [images] : images
+
+    urls = images.map do |image|
+      "url('" << image_path(image) << "')"
+    end.join(', ')
+    "background-image: #{urls}"
   end
 
   def icon(name)

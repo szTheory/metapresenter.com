@@ -33,9 +33,11 @@ body {
 #black-breakup {
   padding-top: 60px;
   background-color: #18181a;
-  background-position-y: 1048px;
-  background-size: 200%;
-  background-position-x: -324px;
+
+  background-position-y: 0, 1078px;
+  background-size: 100% auto, 200% auto;
+  background-position-x: 0, -330px;
+  background-repeat: no-repeat, repeat-y;
 
   #black-breakup-image {
     margin-top: -60px;
