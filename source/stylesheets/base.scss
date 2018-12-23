@@ -138,10 +138,24 @@ p {
     font-weight: bold;
     border-bottom: 1px solid white;
   }
-}
 
-p.non-mobile {
-  display: none;
+  &.big {
+    color: #646262;
+    font-size: 18px;
+    font-weight: 200;
+    // line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+
+    strong {
+      color: rgb(19, 19, 20);
+      border: none;
+    }
+  }
+
+  &.non-mobile {
+    display: none;
+  }
 }
 
 @include media-breakpoint-up(sm) {

@@ -24,9 +24,9 @@
             %p
               MetaPresenter is a
               %strong 100% free
-              Ruby gem that gives you access to the powerful presenter pattern in your Rails contollers.
+              Ruby gem that gives you access to the powerful presenter pattern in your Rails views.
             %p.non-mobile
-              Pull yourself out of the vortex of messy Rails. Start writing beautiful frontend code that will streamline your work and &ldquo;wow&rdquo; your coworkers. 
+              Pull yourself out of the vortex of messy Rails. Start writing beautiful frontend code that will streamline your work and &ldquo;wow&rdquo; coworkers.
 
         .row.justify-content-center
           .col.col-lg-4
@@ -49,8 +49,11 @@
           .col.col-lg-8
             %h2.shadow-base.elegantshadow.upcase MetaPresenter
             %h3.mt-4 How does it work?
-            %p
-              For each controller/action pair you get a controller class in app/presenters that you can use in your views with presenter.method_name. There's even a DSL for method delegation on objects to reduce boilerplate.
+            %p.big
+              For each controller & action you get a presenter class with methods that you can call in your views with
+              / %code presenter.method_name
+              %strong presenter.method_name
+            %p.big You can even delegate methods to objects or controller itself to reduce boilerplate.
 
       %ul.container-fluid
         - dato.home.steps.each do |step|
