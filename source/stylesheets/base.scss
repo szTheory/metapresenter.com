@@ -2,8 +2,9 @@ body {
   background: #18181a;
 }
 
-.container-light {
+#container-light {
   background-color: white;
+  padding-top: 80px;
 }
 
 #logo {
@@ -22,9 +23,11 @@ body {
 
 #hero-line-base {
   position: relative;
-  top: 114px;
-  margin-top: -114px;
+  top: 56px;
+  margin-top: -56px;
   z-index: 9999;
+  height: 115px;
+  // width: 4px;
 }
 
 // #install-instructions {
