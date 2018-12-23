@@ -9,6 +9,10 @@ body {
   &.container-steps {
     padding-top: 100px;
   }
+
+  &#first-light-container {
+    padding-bottom: 50px;
+  }
 }
 
 #logo {
