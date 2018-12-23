@@ -2,7 +2,7 @@ body {
   background: #18181a;
 }
 
-#container-light {
+.container-light {
   background-color: white;
   padding-top: 72px;
 }
@@ -28,6 +28,18 @@ body {
   z-index: 9999;
   height: 115px;
   // width: 4px;
+}
+
+#black-breakup {
+  padding-top: 60px;
+  // background: #18181a url('../images/overlay-shape.png');
+  background-color: #18181a;
+
+  #red-three-dots {
+    width: 32px;
+    height: 6px;
+    margin-bottom: 18px;
+  }
 }
 
 // #install-instructions {
@@ -67,6 +79,15 @@ h3 {
     font-size: 16px;
     padding: 10px 16px;
   }
+}
+
+h4 {
+  color: #1E242B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1.63px;
+  line-height: 27px;
 }
 
 .upcase {
@@ -151,6 +172,27 @@ p {
       color: rgb(19, 19, 20);
       border: none;
     }
+  }
+
+  &.big-dark {
+    color: #787A8E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 3.09px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &.massive {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 1.73px;
+    line-height: 36px;
+    text-align: center;
   }
 
   &.non-mobile {

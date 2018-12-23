@@ -31,21 +31,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.m?js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      },
-      {
         test: /\.erb$/,
         enforce: 'pre',
         loader: 'rails-erb-loader',
         options: {
           runner: 'ruby',
           engine: 'erb',
+        }
+      },
+      {
+        test: /\.m?js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
         }
       },
       {

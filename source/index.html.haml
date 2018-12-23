@@ -41,7 +41,7 @@
             %p.upcase.learnmore Learn More
             = image_tag 'images/hero-line-base.png', id: 'hero-line-base'
 
-#container-light.container-fluid
+.container-light.container-fluid
   .row
     .col
       .container-fluid.text-center
@@ -55,6 +55,18 @@
               %strong presenter.method_name
             %p.big You can even delegate methods to objects or controller itself to reduce boilerplate.
 
+#black-breakup.container-fluid{style: background_image('images/overlay-shape.png')}
+  .row
+    .col
+      .container-fluid.text-center
+        .row.justify-content-center
+          = image_tag 'images/red-three-dots.png', id: 'red-three-dots'
+          %p.big-dark Decompose your helper logic into tight, easily-testable classes
+          %p.massive In 4 simple steps
+
+.container-light.container-fluid
+  .row
+    .col
       %ul.container-fluid
         - dato.home.steps.each do |step|
           = partial 'selling_point', locals: {message: step.message, code_block: step.code, syntax_language: step.syntax_language}
