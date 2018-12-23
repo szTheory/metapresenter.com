@@ -5,6 +5,10 @@ body {
 .container-light {
   background-color: white;
   padding-top: 72px;
+
+  &.container-steps {
+    padding-top: 120px;    
+  }
 }
 
 #logo {
@@ -52,11 +56,19 @@ body {
   }
 }
 
-// #install-instructions {
-//   pre {
-//     // background-color: #18181a !important;
-//   }
-// }
+.step-number {
+  color: #787A8E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+}
+
+#install-instructions {
+  .highlight {
+    text-align: center !important;
+  }
+}
 
 h1, h2, h4 {
   color: white;
@@ -203,6 +215,7 @@ p {
     letter-spacing: 1.73px;
     line-height: 36px;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &.non-mobile {
@@ -214,6 +227,17 @@ p {
   p.non-mobile {
     display: default;
   }
+}
+
+.highlight {
+  background-color: #18181a !important;
+}
+
+.selling-point .inside-point {
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  background-position-y: 8px;
+  padding-left: 22px;
 }
 
 .nav-link {

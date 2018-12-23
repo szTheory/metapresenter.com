@@ -66,12 +66,12 @@
             %p.massive In 4 simple steps
   = image_tag 'images/overlay-shape.png', id: 'black-breakup-image', class: 'img-fluid'
 
-.container-light.container-fluid
+.container-light.container-steps.container-fluid
   .row
     .col
       %ul.container-fluid
-        - dato.home.steps.each do |step|
-          = partial 'selling_point', locals: {message: step.message, code_block: step.code, syntax_language: step.syntax_language}
+        - dato.home.steps.each.with_index do |step, i|
+          = partial 'selling_point', locals: {number: i+1, message: step.message, code_block: step.code, syntax_language: step.syntax_language}
         
       .container-fluid.text-center
         .row
