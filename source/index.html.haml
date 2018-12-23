@@ -55,14 +55,16 @@
               %strong presenter.method_name
             %p.big You can even delegate methods to objects or controller itself to reduce boilerplate.
 
-#black-breakup.container-fluid{style: background_image('images/overlay-shape.png')}
-  .row
-    .col
-      .container-fluid.text-center
-        .row.justify-content-center
-          = image_tag 'images/red-three-dots.png', id: 'red-three-dots'
-          %p.big-dark Decompose your helper logic into tight, easily-testable classes
-          %p.massive In 4 simple steps
+#black-breakup{style: background_image('images/escher-gradient.png')}
+  .container-fluid
+    .row
+      .col
+        .container-fluid.text-center
+          .row.justify-content-center
+            = image_tag 'images/red-three-dots.png', id: 'red-three-dots'
+            %p.big-dark Decompose your helper logic into tight, easily-testable classes
+            %p.massive In 4 simple steps
+  = image_tag 'images/overlay-shape.png', id: 'black-breakup-image', class: 'img-fluid'
 
 .container-light.container-fluid
   .row

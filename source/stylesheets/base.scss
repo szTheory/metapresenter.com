@@ -32,8 +32,16 @@ body {
 
 #black-breakup {
   padding-top: 60px;
-  // background: #18181a url('../images/overlay-shape.png');
   background-color: #18181a;
+  background-position-y: 1048px;
+  background-size: 200%;
+  background-position-x: -324px;
+
+  #black-breakup-image {
+    margin-top: -60px;
+    position: relative;
+    top: 82px;
+  }
 
   #red-three-dots {
     width: 32px;
