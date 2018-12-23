@@ -4,7 +4,7 @@ body {
 
 #container-light {
   background-color: white;
-  padding-top: 80px;
+  padding-top: 72px;
 }
 
 #logo {
@@ -54,6 +54,7 @@ h3 {
   text-align: center;
   background-color: #DB4355;
   padding: 10px 16px;
+  width: 100%;
 
   @extend .align-middle;
 
