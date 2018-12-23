@@ -1,9 +1,4 @@
 body {
-  // margin: 0;
-  // height: 100vh;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   background: #18181a;
 }
 
@@ -25,11 +20,18 @@ body {
   width: 300px;
 }
 
-#install-instructions {
-  pre {
-    // background-color: #18181a !important;
-  }
+#hero-line-base {
+  position: relative;
+  top: 114px;
+  margin-top: -114px;
+  z-index: 9999;
 }
+
+// #install-instructions {
+//   pre {
+//     // background-color: #18181a !important;
+//   }
+// }
 
 h1, h2, h4 {
   color: white;
