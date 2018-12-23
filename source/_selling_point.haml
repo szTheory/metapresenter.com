@@ -1,8 +1,9 @@
-%li.selling-point.row.justify-content-center
+%li.selling-point.row.justify-content-center.mt-4
   .col.col-lg-8
     = partial 'step_number', locals: {number: number}
     .inside-point{style: background_image('images/red-rectangle.png')}
       %h4 #{message}
       %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-    = code(syntax_language) do
-      #{code_block}
+    .mb-1
+      = code(syntax_language) do
+        #{code_block}

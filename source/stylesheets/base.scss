@@ -7,7 +7,7 @@ body {
   padding-top: 72px;
 
   &.container-steps {
-    padding-top: 120px;    
+    padding-top: 100px;
   }
 }
 
@@ -67,6 +67,19 @@ body {
 #install-instructions {
   .highlight {
     text-align: center !important;
+    font-size: 1rem !important;
+  }
+}
+.highlight {
+  background-color: #18181a !important;
+  // font-size: 10px !important
+  font-size: 0.60rem !important;
+  padding: 1px 3px;
+  margin: 0;
+}
+@include media-breakpoint-up(sm) {
+  .highlight {
+    font-size: 1rem !important;
   }
 }
 
@@ -227,10 +240,6 @@ p {
   p.non-mobile {
     display: default;
   }
-}
-
-.highlight {
-  background-color: #18181a !important;
 }
 
 .selling-point .inside-point {
