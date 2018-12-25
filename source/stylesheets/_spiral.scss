@@ -13,6 +13,7 @@ html {
   left: 50%;
   margin: -500px 0 0 -500px;
   z-index: -9999;
+  overflow: hidden;
 
   &:after {
     content: '\A';
