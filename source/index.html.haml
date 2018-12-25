@@ -1,47 +1,49 @@
-.container
+#topshelf
   = partial 'spiral'
+  = partial 'layouts/nav'
 
-  .row
-    .col
-      .container-fluid.text-center
-        / .row
-        /   .col
-        /     %h1 #{dato.application.name}
-        .row.justify-content-center
-          / .col-4.col-lg-3
-          #animated-text-container.col.mb-2
-            %p
-              %span Ruby
-              %span Rails
-            %p
-              %span Rails
-              %span Presenter
-            %p
-              %span Presenter
-              %span Classes
-        .row.justify-content-center.mt-4
-          .col.col-lg-8
-            = image_tag 'images/hero-title.png', class: 'img-fluid mb-3', id: 'hero-title'
-            %h3.mb-3 It's time to beautify your Rails views
-            %p
-              MetaPresenter is a
-              %strong 100% free
-              Ruby gem that gives you access to the powerful presenter pattern in your Rails views.
-            %p.non-mobile
-              Pull yourself out of the vortex of messy Rails. Start writing beautiful frontend code that will streamline your work and &ldquo;wow&rdquo; coworkers.
+  .container
+    .row
+      .col
+        .container-fluid.text-center
+          / .row
+          /   .col
+          /     %h1 #{dato.application.name}
+          .row.justify-content-center
+            / .col-4.col-lg-3
+            #animated-text-container.col.mb-2
+              %p
+                %span Ruby
+                %span Rails
+              %p
+                %span Rails
+                %span Presenter
+              %p
+                %span Presenter
+                %span Classes
+          .row.justify-content-center.mt-4
+            .col.col-lg-8
+              = image_tag 'images/hero-title.png', class: 'img-fluid mb-3', id: 'hero-title'
+              %h3.mb-3 It's time to beautify your Rails views
+              %p
+                MetaPresenter is a
+                %strong 100% free
+                Ruby gem that gives you access to the powerful presenter pattern in your Rails views.
+              %p.non-mobile
+                Pull yourself out of the vortex of messy Rails. Start writing beautiful frontend code that will streamline your work and &ldquo;wow&rdquo; coworkers.
 
-        .row.justify-content-center
-          .col.col-lg-4
-            #install-instructions.text-left
-              %p.text-center To install just add to your Gemfile and bundle:
-              = code('ruby') do
-                gem 'meta_presenter' 
-              = code('sh') do
-                $ bundle install
-        .row.justify-content-center
-          .col.col-lg-4
-            %p.upcase.learnmore Learn More
-            = image_tag 'images/hero-line-base.png', id: 'hero-line-base'
+          .row.justify-content-center
+            .col.col-lg-4
+              #install-instructions.text-left
+                %p.text-center To install just add to your Gemfile and bundle:
+                = code('ruby') do
+                  gem 'meta_presenter' 
+                = code('sh') do
+                  $ bundle install
+          .row.justify-content-center
+            .col.col-lg-4
+              %p.upcase.learnmore Learn More
+              = image_tag 'images/hero-line-base.png', id: 'hero-line-base'
 
 #first-light-container.container-light.container-fluid
   .row

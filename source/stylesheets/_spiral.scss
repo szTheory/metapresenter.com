@@ -5,13 +5,16 @@ html {
   // overflow: hidden;
 }
 
+#topshelf {
+  overflow: hidden;
+  position: relative;
+}
+
 #spiral-container {
-  height: 1000px;
-  width: 1000px;
+  // height: 1000px;
+  // width: 1000px;
   position: absolute;
-  top: 50%;
   left: 50%;
-  margin: -500px 0 0 -500px;
   z-index: -9999;
   overflow: hidden;
 
@@ -43,5 +46,47 @@ html {
   @keyframes rotate {
     0%{ transform: rotate(0deg); }
     100%{ transform: rotate(360deg); }  
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  #spiral-container {
+    height: 1000px;
+    width: 1000px;
+    margin: -500px 0 0 -500px;
+    // top: 25%;
+    top: 190px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  #spiral-container {
+    height: 1200px;
+    width: 1200px;
+    margin: -600px 0 0 -600px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #spiral-container {
+    height: 1400px;
+    width: 1400px;
+    margin: -700px 0 0 -700px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #spiral-container {
+    height: 1600px;
+    width: 1600px;
+    margin: -800px 0 0 -800px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  #spiral-container {
+    height: 2600px;
+    width: 2600px;
+    margin: -1300px 0 0 -1300px;
   }
 }
