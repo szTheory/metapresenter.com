@@ -291,3 +291,31 @@ p {
   letter-spacing: 3.73px;
   line-height: 17px;
 }
+
+footer {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background-color: #D2D2DD;
+  text-align: center;
+
+  span, a, a:hover {
+    color: #9294A8;
+    font-family: 'Prompt', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 3.47px;
+    line-height: 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  span {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  #footer-logo {
+    height: 23px;
+    width: 228px;
+  }
+}

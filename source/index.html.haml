@@ -97,3 +97,19 @@
             .col-11
               = link_to dato.application.github_url, class: 'cta' do
                 %h3 Get started now
+
+%footer
+  .container-fluid
+    .row.justify-content-center
+      .col-10
+        = link_to dato.application.github_url do
+          = image_tag 'images/footer-logo.png', class: 'mb-3 img-fluid', id: 'footer-logo'
+        .navlist.mb-3
+          - dato.nav.nav_items.each.with_index do |nav_item, i|
+            = link_to nav_item.path do
+              #{nav_item.label}
+            - unless i == dato.nav.nav_items.size-1
+              %span= "//"
+        = link_to dato.application.github_url, class: 'mt-4' do
+          = image_tag 'images/logos.png', class: 'img-fluid'
+        %p.mt-4 MetaPresenter as well as the contents of this website developed and © 2018 by szTheory. Current Version #{dato.application.current_version_number}
