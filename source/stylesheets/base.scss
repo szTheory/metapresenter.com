@@ -2,9 +2,12 @@ body {
   background: #18181a;
 }
 
+#topshelf {
+  padding-bottom: 84px;
+}
+
 .container-light {
   background-color: white;
-  padding-top: 72px;
 
   &.container-steps {
     padding-top: 100px;
@@ -12,6 +15,11 @@ body {
 
   &#first-light-container {
     padding-bottom: 50px;
+  }
+
+  &#container-light-main {
+    padding-top: 72px;
+    padding-bottom: 25px;
   }
 }
 
@@ -31,11 +39,10 @@ body {
 
 #hero-line-base {
   position: relative;
-  top: 56px;
-  margin-top: -56px;
+  top: -23px;
+  margin-top: -35px;
   z-index: 9999;
   height: 115px;
-  // width: 4px;
 }
 
 .black-breakup {
@@ -64,10 +71,6 @@ body {
   padding-bottom: 75px;
 }
 
-#container-light-main {
-  padding-bottom: 25px;
-}
-
 .step-number {
   color: #787A8E;
   font-family: 'Montserrat', sans-serif;
@@ -85,7 +88,6 @@ body {
 }
 .highlight {
   background-color: #18181a !important;
-  // font-size: 10px !important
   font-size: 0.60rem !important;
   padding: 1px 3px;
   margin: 0;
@@ -123,7 +125,6 @@ h3 {
 }
 
 a.cta {
-  // padding: 30px;
   display: block;
   width: 100%;
 
@@ -153,15 +154,12 @@ h4 {
 }
 
 .learnmore {
-  // height: 17px;
-  // width: 201px;
   color: #787A8E;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3.73px;
   line-height: 17px;
-  // text-align: center;
   display: none;
 }
 @include media-breakpoint-up(sm) {
@@ -174,8 +172,6 @@ main {
   :not(code) ul li a:empty,
   :not(code) ol li a:empty,
   :not(code) a:empty {
-    // height: 18px;
-    // width: 100px;
     color: #18181A;
     font-family: 'Prompt', sans-serif;
     font-size: 12px;
@@ -210,7 +206,6 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;  
   font-weight: 300; 
-  // line-height: 14px;
 
   strong {
     color: white;
@@ -222,7 +217,6 @@ p {
     color: #646262;
     font-size: 18px;
     font-weight: 200;
-    // line-height: 22px;
     text-align: center;
     margin-top: 20px;
 
@@ -283,7 +277,6 @@ p {
 
 .nav-link {
   height: 17px;
-  // width: 488px;
   color: #FFF;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
