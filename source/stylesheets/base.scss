@@ -41,7 +41,7 @@ body {
   position: relative;
   top: -23px;
   margin-top: -35px;
-  z-index: 9999;
+  // z-index: 9999;
   height: 115px;
 }
 
@@ -319,20 +319,28 @@ footer {
 #bottom-float-bar {
   // position: fixed;
   bottom: 20px;
+  background-color: white;
 
   .container-fluid {
     padding: 0 !important;
   }
 
   .floatbar-wrapper {
-    background-color: white;
     box-sizing: border-box;
     border: 1px solid #B7BADB;
+  }
+
+  .get-started {
+    border-left: 1px solid #B7BADB;
   }
 
   .github {
     line-height: 20px;
     margin-top: 2px;
+
+    a {
+      display: block;
+    }
 
     * {
       color: #787A8E;
