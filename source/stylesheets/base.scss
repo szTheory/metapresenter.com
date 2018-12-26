@@ -41,7 +41,6 @@ body {
   position: relative;
   top: -23px;
   margin-top: -35px;
-  // z-index: 9999;
   height: 115px;
 }
 
@@ -317,9 +316,7 @@ footer {
 }
 
 #bottom-float-bar {
-  // position: fixed;
   bottom: 20px;
-  background-color: white;
 
   .container-fluid {
     padding: 0 !important;
@@ -328,18 +325,26 @@ footer {
   .floatbar-wrapper {
     box-sizing: border-box;
     border: 1px solid #B7BADB;
+    background-color: white;
   }
 
   .get-started {
     border-left: 1px solid #B7BADB;
+    h3 {
+      padding: 13px;
+    }
   }
 
   .github {
     line-height: 20px;
-    margin-top: 2px;
+    // margin-top: 2px;
+
+    display: flex;
+    align-items: center;
 
     a {
-      display: block;
+      display: inline-block;
+      width: 100%;
     }
 
     * {
@@ -352,11 +357,6 @@ footer {
       }
     }
 
-    // .github-inside {
-    //   padding-top: 4px;
-    //   padding-bottom: 5px;
-    // }
-
     .num {
       width: 53px;
       height: 36px;
@@ -368,6 +368,20 @@ footer {
     img.githubcat {
       height: 22px;
       width: 22px;
+      position: relative;
+      bottom: 2px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  #bottom-float-bar {
+    display: none;
+
+    .get-started {
+      h3 {
+        padding: 10px;
+      }
     }
   }
 }

@@ -6,5 +6,4 @@ import '../stylesheets/highlighting.scss.erb'
 import 'bootstrap/js/src/collapse'
 
 $(document).ready(function () {
-  // console.log("document.ready()")
 });
