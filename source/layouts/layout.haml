@@ -17,7 +17,7 @@
           .container-fluid
             .row.justify-content-center.no-gutters
               .github.col-6.text-center
-                %span.github-inside.align-middle
+                = link_to dato.application.github_url, class: 'github-inside align-middle' do
                   = image_tag 'images/githubcat.png', class: 'githubcat'
                   Star
                   .num{style: background_image('images/github-stars-count-bubble.png')}

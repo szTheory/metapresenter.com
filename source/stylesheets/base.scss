@@ -331,11 +331,18 @@ footer {
   }
 
   .github {
-    color: #787A8E;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
     line-height: 20px;
     margin-top: 2px;
+
+    * {
+      color: #787A8E;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
 
     // .github-inside {
     //   padding-top: 4px;
