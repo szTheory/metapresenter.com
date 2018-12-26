@@ -376,12 +376,16 @@ footer {
 
 @include media-breakpoint-up(md) {
   #bottom-float-bar {
-    display: none;
-
     .get-started {
       h3 {
         padding: 10px;
       }
     }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  #bottom-float-bar {
+    display: none;
   }
 }
