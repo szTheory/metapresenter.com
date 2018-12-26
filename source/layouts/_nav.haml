@@ -4,7 +4,7 @@
   %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
     = image_tag 'images/burger.png', id: 'burger'
   #navbarNav.collapse.navbar-collapse
-    .navbar-nav
+    .navbar-nav.ml-auto
       - dato.nav.nav_items.each.with_index do |nav_item, i|
         = link_to nav_item.path, class: 'nav-item nav-link' do
           #{nav_item.label}
