@@ -33,8 +33,24 @@ nav {
   height: 32px;
 }
 
-#hero-title {
-  width: 300px;
+.hero-title {
+  // width: 300px;
+
+  &.hero-title-lg {
+    display: none;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .hero-title {
+    &.hero-title-sm {
+      display: none;
+    }
+    &.hero-title-lg {
+      margin-top: 3.2rem;
+      display: block;
+    }
+  }
 }
 
 #hero-line-base {
