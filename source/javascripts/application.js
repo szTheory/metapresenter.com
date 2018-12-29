@@ -5,5 +5,5 @@ import '../stylesheets/highlighting.scss.erb'
 // JS imports
 import 'bootstrap/js/src/collapse'
 
-$(document).ready(function () {
-});
+// app
+import './github'
