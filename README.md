@@ -5,8 +5,6 @@
 ![screenshot](https://user-images.githubusercontent.com/28652/50430935-fe87b780-0894-11e9-86a6-b3fda43abbad.jpeg)
 
 === TODO
-* add dynamic stargazers count from Github API
-* make stargazers count async JS call
 * fix header on mobile
 * CSS for desktop size
 * CSS for tablet size
