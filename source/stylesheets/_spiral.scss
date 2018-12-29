@@ -33,11 +33,17 @@
     background: black;  
     animation: rotate 200s infinite linear; 
     transform: rotate(0deg);
+    transition-duration: 200s;
+    transition-property: transform;
   }
 
+  // @keyframes rotate {
+  //   0% { transform: rotate(0deg); }
+  //   100% { transform: rotate(360deg); }  
+  // }
   @keyframes rotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }  
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
   }
 }
 

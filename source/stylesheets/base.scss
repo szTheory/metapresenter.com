@@ -110,6 +110,7 @@ h3 {
   text-transform: uppercase;
   
   font-weight: 300;
+  font-size: 11px;
   letter-spacing: 3.53px;
   line-height: 1.4em;
   vertical-align: middle;
@@ -117,12 +118,10 @@ h3 {
   text-align: center;
   background-color: #DB4355;
   padding: 10px 16px;
+  // padding: 5px 30px;
   width: 100%;
 
   @extend .align-middle;
-
-  font-size: 11px;
-  padding: 5px 30px;
 }
 
 a.cta {
@@ -309,9 +308,12 @@ nav {
     }
   }
 
-  .github {
-    margin-left: 80px;
+  .github, .get-started-button {
     display: none;
+  }
+
+  .github {
+    margin-left: 10px;
 
     .box {
       box-sizing: border-box;
@@ -330,10 +332,57 @@ nav {
       padding-top: 7px;
     }  
   }
+
+  .get-started-button {
+    box-sizing: border-box;
+    border: 2px solid #FFF;
+
+    h3 {
+      background-color: transparent !important;
+      color: #FFF;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 3.73px;
+      line-height: 17px;
+      text-align: center;
+    }
+  }
 }
 @include media-breakpoint-up(lg) {
-  nav .github {
-    display: block;
+  nav {
+    .nav-link {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+    .get-started-button {
+      margin-left: 10px;
+
+      h3 {
+        padding: 18px 36px;
+      }
+    }
+
+    .github, .get-started-button {
+      display: block;
+    }
+    .github {
+      margin-left: 4px;
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  nav {
+    .get-started-button {
+      margin-left: 35px;
+
+      h3 {
+        padding: 25px 60px;
+      }
+    }
+    .github {
+      margin-left: 80px;
+    }
   }
 }
 
