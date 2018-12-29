@@ -83,6 +83,33 @@ helpers do
   def markdown(content)
     Tilt::RedcarpetTemplate.new { content }.render
   end
+
+  def stargazers_count
+    @stargazers_count || begin
+      response = graphql_client.query <<~GRAPHQL
+        query {
+          repository(owner: "szTheory", name: "meta_presenter") {
+            stargazers {
+              totalCount
+            }
+          }
+        }
+      GRAPHQL
+
+      response.data.repository.stargazers.total_count
+    rescue Graphlient::Errors::ServerError => e
+      puts "#{e.class.name}: #{e.status_code}, #{e.response}"
+      raise e
+    end
+  end
+
+  def graphql_client
+    Graphlient::Client.new('https://api.github.com/graphql',
+      headers: {
+        'Authorization' => "token #{ENV['GITHUB_API_KEY']}"
+      }
+    )
+  end
 end
 
 # Build-specific configuration

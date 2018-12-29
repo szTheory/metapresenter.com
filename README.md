@@ -6,9 +6,11 @@
 
 === TODO
 * add dynamic stargazers count from Github API
+* make stargazers count async JS call
 * fix header on mobile
 * CSS for desktop size
 * CSS for tablet size
 * trim the escher background CSS image to relevant portions to reduce image filesize
 * include the header at layout level so that it shows for /readme as well
 * pruebala en distintas navegadores (IE, FF, Chrome, Safari)
+* move all remaining hardcoded copy to DatoCMS

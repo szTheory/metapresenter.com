@@ -21,7 +21,7 @@
                   = image_tag 'images/githubcat.png', class: 'githubcat'
                   Star
                   .num{style: background_image('images/github-stars-count-bubble.png')}
-                    1
+                    #{stargazers_count}
               .get-started.col-6
                 = link_to dato.application.github_url do
                   %h3 Get Started

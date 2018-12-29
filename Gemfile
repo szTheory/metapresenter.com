@@ -61,6 +61,8 @@ gem 'redcarpet' #markdown
 # MIDDLEMAN BOOTSTRAP
 # gem 'bh', '~> 1.3' #middleman bootstrap helpers
 
+gem 'graphlient' #graphql
+
 # PLATFORM COMPAT.
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
