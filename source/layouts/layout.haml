@@ -17,11 +17,6 @@
           .container-fluid
             .row.justify-content-center.no-gutters
               .github.col-6.text-center.align-middle
-                = link_to dato.application.github_url, class: 'github-inside align-middle' do
-                  = image_tag 'images/githubcat.png', class: 'githubcat'
-                  Star
-                  .stargazers-count{style: background_image('images/github-stars-count-bubble.png')}
-                    #{icon('spinner', animated: true)}
+                = partial 'stargazers'
               .get-started.col-6
-                = link_to dato.application.github_url do
-                  %h3 Get Started
+                = partial 'get_started'

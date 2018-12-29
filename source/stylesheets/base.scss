@@ -306,9 +306,11 @@ nav {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 3.73px;
     line-height: 17px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
 
     &.slash {
       font-weight: 100;
@@ -366,43 +368,66 @@ footer {
       padding: 13px;
     }
   }
+}
 
-  .github {
-    line-height: 20px;
-    // margin-top: 2px;
+nav .github {
+  margin-left: 80px;
 
-    display: flex;
-    align-items: center;
+  .box {
+    box-sizing: border-box;
+    // height: 43px;
+    // width: 88px;
+    position: relative;
+    top: 2px;
+    padding: 8px 9px 7px 14px;
+    border: 1px solid #808080;
+  }
 
-    a {
-      display: inline-block;
-      width: 100%;
+  * {
+    color: #DFDCDC;
+  }
+
+  .stargazers-count {
+    color: #787A8E;
+    padding-top: 7px;
+  }  
+}
+
+.github {
+  line-height: 20px;
+  // margin-top: 2px;
+
+  display: flex;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    width: 100%;
+  }
+
+  * {
+    color: #787A8E;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
+    &:hover {
+      text-decoration: none;
     }
+  }
 
-    * {
-      color: #787A8E;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
+  .github-icon {
+    font-size: 22px;
+    position: relative;
+    top: 2px;
+  }
 
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
-    .stargazers-count {
-      width: 53px;
-      height: 36px;
-      text-align: center;
-      padding-top: 9px;
-      display: inline-block;
-    }
-
-    img.githubcat {
-      height: 22px;
-      width: 22px;
-      position: relative;
-      bottom: 2px;
-    }
+  .stargazers-count {
+    color: #333;
+    width: 53px;
+    height: 36px;
+    text-align: center;
+    padding-top: 8px;
+    display: inline-block;
   }
 }
 

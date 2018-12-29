@@ -76,6 +76,10 @@ helpers do
     "background-image: #{urls}"
   end
 
+  def github_icon
+    content_tag(:i, '', class: "fab fa-github github-icon")
+  end
+
   def icon(name, animated: false)
     content_tag(:i, '', class: "fa fa-#{name} #{animated ? 'fa-spin' : ''}")
   end
