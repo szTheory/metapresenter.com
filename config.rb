@@ -102,7 +102,7 @@ configure :build do
   activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript, compressor: ::Uglifier.new(mangle: true, compress: {drop_console: true}, output: {comments: :none})
+  activate :minify_javascript, compressor: ::Uglifier.new(harmony: true, mangle: true, compress: {drop_console: true}, output: {comments: :none})
 
   # # Image optimization on build
   # activate :imageoptim 

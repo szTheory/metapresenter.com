@@ -42,6 +42,10 @@ gem 'hamlit' #faster haml
 gem 'slim'
 gem 'redcarpet' #markdown
 
+# minify JS
+gem 'therubyracer' # faster JS compiles
+gem 'oj' # faster JS compiles
+
 # MIDDLEMAN USEFUL
 # gem 'middleman-fragment-caching' #fragment caching to reduce build times for big sites
 # gem 'middleman-title' #page title helper
