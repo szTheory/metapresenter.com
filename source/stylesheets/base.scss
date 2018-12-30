@@ -7,26 +7,28 @@ nav {
   align-items: center;
 }
 
-#topshelf #hero {
+#topshelf {
   padding-bottom: 84px;
 
-  .hero-linework-col {
-    display: none;
+  #hero {
+    .hero-linework-col {
+      display: none;
 
-    .hero-linework {
-      width: 100%;
-      height: 20px;
+      .hero-linework {
+        width: 100%;
+        height: 20px;
 
-      &.hero-linework-left {
-      }
+        &.hero-linework-left {
+        }
 
-      &.hero-linework-right {
-        -moz-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
+        &.hero-linework-right {
+          -moz-transform: scaleX(-1);
+          -o-transform: scaleX(-1);
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          filter: FlipH;
+          -ms-filter: "FlipH";
+        }
       }
     }
   }
