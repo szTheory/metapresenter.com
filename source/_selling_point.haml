@@ -1,9 +1,10 @@
-%li.selling-point.row.justify-content-center.mt-4
+%li.selling-point.row.justify-content-center.mt-5
   .col.col-lg-8
     = partial 'step_number', locals: {number: number}
     .inside-point{style: background_image('images/red-rectangle.png')}
       %h4 #{message}
-      %p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+      - if description.present?
+        %p #{description}
     .mb-1
       = code(syntax_language) do
         #{code_block}

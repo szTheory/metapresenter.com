@@ -62,7 +62,7 @@
             %h2.shadow-base.elegantshadow.upcase MetaPresenter
             %h3.mt-4 How does it work?
             %p.big
-              For each controller & action you get a presenter class with that you can call in your views with
+              You get a presenter class for each of your controller's actions that you can use from your views with
               / %code presenter.method_name
               %strong presenter.method_name
             %p.big You can even delegate methods to objects or the controller itself to reduce boilerplate code.
@@ -85,7 +85,7 @@
     .col
       %ul.container-fluid
         - dato.home.steps.each.with_index do |step, i|
-          = partial 'selling_point', locals: {number: i+1, message: step.message, code_block: step.code, syntax_language: step.syntax_language}
+          = partial 'selling_point', locals: {number: i+1, message: step.message, description: step.description, code_block: step.code, syntax_language: step.syntax_language}
 
 #black-breakup-bottom.black-breakup{style: background_image('images/escher-gradient.png')}
   = image_tag 'images/overlay-shape-bottom.png', id: 'black-breakup-image', class: 'img-fluid'

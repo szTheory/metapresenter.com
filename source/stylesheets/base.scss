@@ -139,6 +139,10 @@ nav {
   line-height: 17px;
 }
 
+.step-number-line {
+  width: 100%;
+}
+
 #install-instructions {
   .highlight {
     text-align: center !important;
@@ -155,6 +159,11 @@ nav {
 @include media-breakpoint-up(sm) {
   .highlight {
     font-size: 1rem !important;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .highlight {
+    padding: 8px 10px;
   }
 }
 
