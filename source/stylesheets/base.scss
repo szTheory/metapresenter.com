@@ -7,7 +7,7 @@ nav {
   align-items: center;
 }
 
-#topshelf {
+#topshelf #hero {
   padding-bottom: 84px;
 
   .hero-linework-col {
@@ -33,7 +33,7 @@ nav {
 }
 
 @include media-breakpoint-up(lg) {
-  #topshelf {
+  #topshelf #hero {
     .hero-linework-col {
       display: inline-block;
     }
