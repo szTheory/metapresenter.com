@@ -22,10 +22,17 @@
                 %span Presenter
                 %span Classes
           .row.justify-content-center.mt-4
-            .col.col-lg-8
+            .col.col-lg-11.col-xl-10
               = image_tag 'images/hero-title.png', class: 'img-fluid mb-3 hero-title hero-title-sm'
               = image_tag 'images/hero-title-lg.png', class: 'img-fluid mb-3 hero-title hero-title-lg'
-              %h3.mb-3 It's time to beautify your Rails views
+              .container-fluid
+                .row.align-middle.no-gutters.justify-content-center
+                  .col.col-lg-2.hero-linework-col
+                    = image_tag 'images/hero-linework.png', class: 'hero-linework hero-linework-left'
+                  .col.col-lg-8
+                    %h3.mb-3 It's time to beautify your Rails views
+                  .col.col-lg-2.hero-linework-col
+                    = image_tag 'images/hero-linework.png', class: 'hero-linework hero-linework-right'
               %p
                 MetaPresenter is a
                 %strong 100% free
