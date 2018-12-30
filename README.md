@@ -5,10 +5,10 @@
 ![screenshot](https://user-images.githubusercontent.com/28652/50430935-fe87b780-0894-11e9-86a6-b3fda43abbad.jpeg)
 
 === TODO
-* fix header on mobile
 * CSS for desktop size
 * CSS for tablet size
 * trim the escher background CSS image to relevant portions to reduce image filesize
 * include the header at layout level so that it shows for /readme as well
 * pruebala en distintas navegadores (IE, FF, Chrome, Safari)
 * move all remaining hardcoded copy to DatoCMS
+* add simple full-text search to README with LunrJS

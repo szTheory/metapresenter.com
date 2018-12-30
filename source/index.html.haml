@@ -6,11 +6,7 @@
     .row
       .col
         .container-fluid.text-center
-          / .row
-          /   .col
-          /     %h1 #{dato.application.name}
           .row.justify-content-center
-            / .col-4.col-lg-3
             #animated-text-container.col.mb-2
               %p
                 %span Ruby
@@ -57,10 +53,17 @@
     .col
       .container-fluid.text-center
         .row.justify-content-center
-          .col.col-lg-8
+          .col.col-md-10.col-lg-10
             = image_tag 'images/hero-line-base.png', id: 'hero-line-base'
-            %h2.shadow-base.elegantshadow.upcase MetaPresenter
-            %h3.mt-4 How does it work?
+            %h2.shadow-base.elegantshadow.upcase.text-center MetaPresenter
+            .container-fluid
+              .row.align-middle.justify-content-center
+                .col.col-sm-3.linework-col
+                  = image_tag 'images/linework.png', class: 'linework linework-left'
+                .col.col-sm-6
+                  %h3.mt-4 How does it work?
+                .col.col-sm-3.linework-col
+                  = image_tag 'images/linework.png', class: 'linework linework-right'
             %p.big
               You get a presenter class for each of your controller's actions that you can use from your views with
               / %code presenter.method_name
