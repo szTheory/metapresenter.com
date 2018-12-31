@@ -96,8 +96,8 @@
   = image_tag 'images/overlay-shape-bottom.png', id: 'black-breakup-image', class: 'img-fluid'
   = image_tag 'images/side-lines-mobile.png', class: 'side-lines-mobile'
   .container-fluid
-    .row
-      .col
+    .row.justify-content-center
+      .col.col-sm-10
         .container-fluid.text-center
           .row.justify-content-center
             = image_tag 'images/red-three-dots.png', id: 'red-three-dots'
@@ -129,6 +129,5 @@
               #{nav_item.label}
             - unless i == dato.nav.nav_items.size-1
               %span= "//"
-        = link_to dato.application.github_url, class: 'mt-4' do
-          = image_tag 'images/logos.png', class: 'img-fluid'
+        = image_tag 'images/logos.png', class: 'img-fluid mt-4'
         %p.mt-4 MetaPresenter as well as the contents of this website developed and © 2018 by szTheory. Current Version #{dato.application.current_version_number}
