@@ -82,8 +82,8 @@
             %p.big-dark Decompose your helper logic into tight, easily-testable classes
           .row.justify-content-center
             %p.massive In 4 simple steps
-    = image_tag 'images/overlay-shape.png', class: 'black-breakup-top-image img-fluid small'
     = image_tag 'images/overlay-shape-large.png', class: 'black-breakup-top-image large'
+  = image_tag 'images/overlay-shape.png', class: 'black-breakup-top-image img-fluid small'
 
 #container-light-main.container-light.container-steps.container-fluid
   .row
@@ -92,8 +92,9 @@
         - dato.home.steps.each.with_index do |step, i|
           = partial 'selling_point', locals: {number: i+1, message: step.message, description: step.description, code_block: step.code, syntax_language: step.syntax_language}
 
-#black-breakup-bottom.black-breakup{style: background_image('images/escher-gradient.png')}
+#black-breakup-bottom.black-breakup{style: background_image('images/bottom-bg-black-abstract.jpg')}
   = image_tag 'images/overlay-shape-bottom.png', id: 'black-breakup-image', class: 'img-fluid'
+  = image_tag 'images/side-lines-mobile.png', class: 'side-lines-mobile'
   .container-fluid
     .row
       .col
