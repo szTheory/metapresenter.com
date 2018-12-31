@@ -252,7 +252,7 @@ nav {
     background-repeat: no-repeat;
     padding-bottom: 73px;
     position: relative;
-    padding-top: 240px;
+    padding-top: 220px;
   }
 
   #black-breakup-image {
@@ -275,6 +275,15 @@ nav {
     }
   }
 }
+
+@include media-breakpoint-up(lg) {
+  .black-breakup {
+    &#black-breakup-bottom {
+      padding-top: 260px;
+    }
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .black-breakup {
     &#black-breakup-bottom {
@@ -318,6 +327,8 @@ nav {
 
     .side-lines {
       display: block;
+      right: -302px;
+      top: -26px;
     }
 
     &#black-breakup-top {
