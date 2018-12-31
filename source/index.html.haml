@@ -30,16 +30,17 @@
                   .col.col-lg-2.hero-linework-col
                     = image_tag 'images/hero-linework.png', class: 'hero-linework hero-linework-right'
               %p
-                MetaPresenter is a
-                %strong 100% free
-                Ruby gem that gives you access to the powerful presenter pattern in your Rails views.
-              %p.non-mobile
-                Pull yourself out of the vortex of messy Rails. Start writing beautiful frontend code that will streamline your work and &ldquo;wow&rdquo; coworkers.
+                %span
+                  MetaPresenter is a
+                  %strong 100% free
+                  Ruby gem for the view presenter pattern.
+                %span.non-mobile
+                  Pull yourself out of the vortex of messy views and start writing beautiful frontend code that will &ldquo;wow&rdquo; colleagues.
+              %p.text-center To install just add to your Gemfile and bundle:
 
           .row.justify-content-center
             .col.col-lg-4
               #install-instructions.text-left
-                %p.text-center To install just add to your Gemfile and bundle:
                 = code('ruby') do
                   gem 'meta_presenter' 
                 = code('sh') do

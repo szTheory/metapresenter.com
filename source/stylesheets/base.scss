@@ -40,7 +40,7 @@ nav {
 }
 @include media-breakpoint-up(sm) {
   #topshelf {
-    padding-bottom: 220px;
+    padding-bottom: 145px;
   }
 }
 
@@ -528,6 +528,24 @@ main {
   }
 }
 
+
+#topshelf p {
+  line-height: 17px;
+}
+@include media-breakpoint-up(sm) {
+  #topshelf p {
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 300;
+    line-height: 27px;
+  }
+}
+@include media-breakpoint-up(md) {
+  #topshelf p {
+    line-height: 29px;
+  }
+}
+
 p {
   color: #84858E; 
   font-family: 'Montserrat', sans-serif;
@@ -574,15 +592,15 @@ p {
     text-align: center;
     text-transform: uppercase;
   }
+}
 
-  &.non-mobile {
-    display: none;
-  }
+.non-mobile {
+  display: none;
 }
 
 @include media-breakpoint-up(sm) {
-  p.non-mobile {
-    display: default;
+  .non-mobile {
+    display: inline;
   }
 }
 
