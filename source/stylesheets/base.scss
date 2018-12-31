@@ -90,16 +90,20 @@ nav {
     display: inline-block;
   }
 
-  #first-light-container {
-    h3 {
-      // width: auto !important;
-      padding: 4px 4px !important;
+  .container-light {
+    &#first-light-container {
+      padding-top: 170px !important;
 
-      font-size: 16px;
-      font-weight: 300;
-      letter-spacing: 3.53px;
-      line-height: 19px;
-      text-align: center;
+      h3 {
+        // width: auto !important;
+        padding: 4px 4px !important;
+
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 3.53px;
+        line-height: 19px;
+        text-align: center;
+      }
     }
   }
 }
@@ -153,11 +157,15 @@ nav {
   top: -59px;
   left: 50%;
   transform: translate(-50%, 0);
-  // top: 141px;
-  // margin-top: -50px;
 
   img {
     height: 115px;
+    &.small {
+      display: inline;
+    }
+    &.large {
+      display: none;
+    }
   }
 }
 .learnmore {
@@ -177,6 +185,16 @@ nav {
 @include media-breakpoint-up(sm) {
   #hero-line-base {
     top: -92px;
+
+    img {
+      height: 184px;
+      &.small {
+        display: none;
+      }
+      &.large {
+        display: inline;
+      }
+    }
   }
 }
 
