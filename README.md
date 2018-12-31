@@ -6,6 +6,7 @@
 
 === TODO
 * Add "Learn More" above the line for bigger size screen
+* Sticky white nav for lg+ sizes
 * CSS for desktop size
 * CSS for tablet size
 * trim the escher background CSS image to relevant portions to reduce image filesize

@@ -64,11 +64,14 @@
                   %h3.mt-4 How does it work?
                 .col.col-sm-3.linework-col
                   = image_tag 'images/linework.png', class: 'linework linework-right'
-            %p.big
-              You get a presenter class for each of your controller's actions that you can use from your views with
-              / %code presenter.method_name
-              %strong presenter.method_name
-            %p.big You can even delegate methods to objects or the controller itself to reduce boilerplate code.
+            .container-fluid
+              .row.justify-content-center
+                .col.col-lg-10.col-xl-8
+                  %p.big
+                    You get a presenter class for each of your controller's actions that you can use from your views with
+                    / %code presenter.method_name
+                    %strong presenter.method_name
+                  %p.big You can even delegate methods to objects or the controller itself to reduce boilerplate code.
 
 #black-breakup-top.black-breakup{style: background_image('images/steps-intro-mobile.jpg', 'images/steps-intro.png')}
   = image_tag 'images/diagonal-slice-rectangle.png', class: 'img-fluid diagonal-slice'
