@@ -107,6 +107,7 @@ nav {
   }
 
   &#container-light-main {
+    clear: both;
     padding-top: 72px;
     padding-bottom: 25px;
   }
@@ -118,7 +119,6 @@ nav {
 }
 
 .hero-title {
-  // width: 300px;
 
   &.hero-title-lg {
     display: none;
@@ -145,6 +145,10 @@ nav {
 }
 
 .black-breakup {
+  .diagonal-slice {
+    display: none;
+  }
+
   #red-three-dots {
     width: 32px;
     height: 6px;
@@ -152,23 +156,100 @@ nav {
   }
 
   &#black-breakup-top {
-    padding-top: 60px;
-    background-color: #18181a;
+    // background-color: #18181A;
+    background-color: white;
 
-    background-position-y: 0, 1078px;
-    background-size: 100% auto, 200% auto;
-    background-position-x: 0, -330px;
-    background-repeat: no-repeat, repeat-y;
+    &> .container-fluid {
+      padding-top: 60px;
+    }
 
-    #black-breakup-top-image {
+    background-size: 100% auto;
+    background-position-y: 0, -61px;
+    background-repeat: no-repeat;
+
+    .black-breakup-top-image {
       margin-top: -60px;
       position: relative;
-      top: 82px;
+      top: 75px;
+
+      &.large {
+        display: none;
+      }
     }
   }
 
   &#black-breakup-bottom {
-    padding-bottom: 75px;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .black-breakup {
+    .diagonal-slice {
+      display: block;
+    }
+
+    &#black-breakup-top {
+      background-size: 0 0, 1959px 378px;
+
+      &> .container-fluid {
+        height: 264px;
+      }
+
+      .black-breakup-top-image {
+        width: 93%;
+        top: 12%;
+        left: 45%;
+
+        &.small {
+          display: none;
+        }
+
+        &.large {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .black-breakup {
+    &#black-breakup-top {
+      &> .container-fluid {
+        height: 239px;
+      }
+
+      .black-breakup-top-image {
+        // width: 68%;
+        // top: 21%;
+        // left: 57%;
+        width: 590px !important;
+        top: 12px;
+        left: 59%;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .black-breakup {
+    &#black-breakup-top {
+      .black-breakup-top-image {
+        // width: 58%;
+        width: 640px !important;
+        top: 14px;
+        left: 64%;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .black-breakup {
+    &#black-breakup-top {
+      .black-breakup-top-image {
+        // width: 48%;
+        // width: 640px !important;
+        top: 5px;
+        left: 66%;
+      }
+    }
   }
 }
 
@@ -387,6 +468,11 @@ p {
     letter-spacing: -0.2px;
     line-height: 14px;
   }
+}
+
+main {
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 nav {
