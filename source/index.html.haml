@@ -44,17 +44,18 @@
                   gem 'meta_presenter' 
                 = code('sh') do
                   $ bundle install
-          .row.justify-content-center
-            .col.col-lg-4
-              %p.upcase.learnmore Learn More
+
 
 #first-light-container.container-light.container-fluid
+  #hero-line-base.text-center
+    %p.upcase.learnmore Learn More
+    = image_tag 'images/hero-line-base.png'
+
   .row
     .col
       .container-fluid.text-center
         .row.justify-content-center
           .col.col-md-10.col-lg-10
-            = image_tag 'images/hero-line-base.png', id: 'hero-line-base'
             %h2.shadow-base.elegantshadow.upcase.text-center MetaPresenter
             .container-fluid
               .row.align-middle.justify-content-center

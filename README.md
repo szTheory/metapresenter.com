@@ -6,6 +6,8 @@
 
 === TODO
 * Add "Learn More" above the line for bigger size screen
+* Add explanatory paragraphs next to each step on instructions section
+* Instructions section two-column styling for lg/xl screens
 * Sticky white nav for lg+ sizes
 * CSS for desktop size
 * CSS for tablet size
