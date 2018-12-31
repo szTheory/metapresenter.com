@@ -211,8 +211,6 @@ nav {
 @include media-breakpoint-up(sm) {
   .black-breakup {
     #black-breakup-image {
-      // width: 66%;
-      // bottom: 50px;
       width: 46%;
     }
   }
@@ -220,8 +218,36 @@ nav {
 @include media-breakpoint-up(md) {
   .black-breakup {
     #black-breakup-image {
-      // width: 55%;
     }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .black-breakup {
+    &#black-breakup-bottom {
+      padding-top: 66px;
+      padding-bottom: 100px;
+
+      background-size: 0, 100% 100%;
+      background-repeat: no-repeat, no-repeat;
+
+
+      .row, .row > * {
+        text-align: left !important;
+        justify-content: left !important;
+        padding-left: 0;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xl) {
+  .black-breakup {
+    #black-breakup-image {
+      width: 32%;
+    }
+  }
+
+  .side-lines {
+    width: 48% !important;
   }
 }
 

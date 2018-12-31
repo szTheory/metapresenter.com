@@ -10,6 +10,7 @@
 * CSS for tablet size
 * trim the escher background CSS image to relevant portions to reduce image filesize
 * include the header at layout level so that it shows for /readme as well
+* Spell check site
 * pruebala en distintas navegadores (IE, FF, Chrome, Safari)
 * move all remaining hardcoded copy to DatoCMS
 * add simple full-text search to README with LunrJS

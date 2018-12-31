@@ -92,29 +92,29 @@
         - dato.home.steps.each.with_index do |step, i|
           = partial 'selling_point', locals: {number: i+1, message: step.message, description: step.description, code_block: step.code, syntax_language: step.syntax_language}
 
-#black-breakup-bottom.black-breakup{style: background_image('images/bottom-bg-black-abstract.jpg')}
+#black-breakup-bottom.black-breakup{style: background_image('images/bottom-bg-black-abstract.jpg', 'images/bottom-bg-black-abstract-large.jpg')}
   = image_tag 'images/overlay-shape-bottom.png', id: 'black-breakup-image', class: 'img-fluid'
   = image_tag 'images/side-lines-mobile.png', class: 'side-lines-mobile'
   = image_tag 'images/side-lines.png', class: 'side-lines'
   .container-fluid
-    .row.justify-content-center
-      .col.col-sm-10
+    .row.justify-content-center.justify-content-lg-left
+      .col.col-sm-10.col-lg-6.offset-lg-6.col-xl-5.offset-xl-5
         .container-fluid.text-center
-          .row.justify-content-center
+          .row.justify-content-center.justify-content-lg-left
             = image_tag 'images/red-three-dots.png', id: 'red-three-dots'
-          .row.justify-content-center
+          .row.justify-content-center.justify-content-lg-left
             %p.big-dark Are you ready to
-          .row.justify-content-center
+          .row.justify-content-center.justify-content-lg-left
             %p.massive Give it a try?
-          .row.justify-content-center
+          .row.justify-content-center.justify-content-lg-left
             = image_tag 'images/line-bottom.png', class: 'step-number-line img-fluid mb-2'
-          .row.justify-content-center
+          .row.justify-content-center.justify-content-lg-left
             = image_tag 'images/line-bottom.png', class: 'step-number-line img-fluid mb-3'
-          .row.justify-content-center
+          .row.justify-content-center.justify-content-lg-left
             .col-11
               %p.mt-1 If you're ready to start beautifying your code in one simple step, visit the GitHub page to grab MetaPresenter or to learn more about it.
-          .row.justify-content-center
-            .col-11
+          .row.justify-content-center.justify-content-lg-left
+            .col-11.col-lg-8
               = link_to dato.application.github_url, class: 'cta' do
                 %h3 Get started now
 
