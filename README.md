@@ -5,7 +5,6 @@
 ![screenshot](https://user-images.githubusercontent.com/28652/50430935-fe87b780-0894-11e9-86a6-b3fda43abbad.jpeg)
 
 === TODO
-* Add "Learn More" above the line for bigger size screen
 * Add explanatory paragraphs next to each step on instructions section
 * Instructions section two-column styling for lg/xl screens
 * Sticky white nav for lg+ sizes

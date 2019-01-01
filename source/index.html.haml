@@ -126,15 +126,27 @@
 
 %footer
   .container-fluid
-    .row.justify-content-center
-      .col-10
-        = link_to dato.application.github_url do
-          = image_tag 'images/footer-logo.png', class: 'mb-3 img-fluid', id: 'footer-logo'
-        .navlist.mb-3
-          - dato.nav.nav_items.each.with_index do |nav_item, i|
-            = link_to nav_item.path do
-              #{nav_item.label}
-            - unless i == dato.nav.nav_items.size-1
-              %span= "//"
-        = image_tag 'images/logos.png', class: 'img-fluid mt-4'
-        %p.mt-4 MetaPresenter as well as the contents of this website developed and © 2018 by szTheory. Current Version #{dato.application.current_version_number}
+    .row.justify-content-center.justify-content-lg-start
+      .col-10.col-lg-9
+        .container-fluid
+          .row.justify-content-lg-left
+            .col-12.col-lg-4.justify-content-lg-left.d-flex.justify-content-sm-center.force-left-lg
+              = link_to dato.application.github_url do
+                = image_tag 'images/footer-logo.png', class: 'mb-3 img-fluid', id: 'footer-logo'
+            .col-12.col-lg-8.navlist.mb-3.justify-content-lg-left.d-flex.justify-content-center
+              - dato.nav.nav_items.each.with_index do |nav_item, i|
+                = link_to nav_item.path do
+                  #{nav_item.label}
+                - unless i == dato.nav.nav_items.size-1
+                  %span= "//"
+      .col-10.col-lg-3
+        .container-fluid
+          .row
+            .col.d-flex.justify-content-center.justify-content-lg-end
+              = image_tag 'images/logos.png', class: 'img-fluid mt-4 mt-lg-0'
+    .row.justify-content-center.justify-content-lg-start
+      .col-10.col-lg-12
+        .container-fluid
+          .row
+            .col.d-flex.justify-content-center.justify-content-lg-start
+              %p.mt-4 MetaPresenter as well as the contents of this website developed and © 2018 by szTheory. Current Version #{dato.application.current_version_number}
