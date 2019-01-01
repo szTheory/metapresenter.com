@@ -95,7 +95,6 @@ nav {
       padding-top: 170px !important;
 
       h3 {
-        // width: auto !important;
         padding: 4px 4px !important;
 
         font-size: 16px;
@@ -197,6 +196,22 @@ nav {
     }
   }
 }
+@include media-breakpoint-up(xl) {
+  #hero-line-base {
+    top: -152px;
+  }
+}
+
+.fold-slash-white {
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+@include media-breakpoint-up(sm) {
+  .fold-slash-white {
+    display: block;
+  }
+}
 
 .black-breakup {
   .diagonal-slice {
@@ -213,7 +228,6 @@ nav {
     position: absolute;
     right: 0;
     top: -35px;
-    // margin-top: -35px;
   }
 
   .side-lines {
@@ -362,9 +376,6 @@ nav {
       }
 
       .black-breakup-top-image {
-        // width: 68%;
-        // top: 21%;
-        // left: 57%;
         width: 590px !important;
         top: 24px;
         left: 53%;
@@ -376,7 +387,6 @@ nav {
   .black-breakup {
     &#black-breakup-top {
       .black-breakup-top-image {
-        // width: 58%;
         width: 640px !important;
         top: 14px;
         left: 64%;
@@ -388,8 +398,6 @@ nav {
   .black-breakup {
     &#black-breakup-top {
       .black-breakup-top-image {
-        // width: 48%;
-        // width: 640px !important;
         top: 5px;
         left: 66%;
       }
@@ -422,6 +430,12 @@ nav {
     }
   }
 }
+@include media-breakpoint-up(xl) {
+  #install-instructions {
+    padding-bottom: 80px;
+  }
+}
+
 .highlight {
   background-color: #18181a !important;
   font-size: 0.60rem !important;
@@ -458,7 +472,6 @@ h3 {
   text-align: center;
   background-color: #DB4355;
   padding: 10px 16px;
-  // padding: 5px 30px;
   width: 100%;
 
   @extend .align-middle;
