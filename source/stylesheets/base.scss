@@ -106,7 +106,13 @@ nav {
     }
   }
 }
-
+@include media-breakpoint-up(xl) {
+  .container-light {
+    &#first-light-container {
+      padding-top: 140px !important;
+    }
+  }
+}
 .container-light {
   background-color: white;
 
@@ -164,6 +170,8 @@ nav {
     }
     &.large {
       display: none;
+      width: 1px;
+      mix-blend-mode: inherit;
     }
   }
 }
