@@ -132,6 +132,13 @@ nav {
     padding-bottom: 80px;
   }
 }
+// @include media-breakpoint-up(sm) {
+//   .container-light {
+//     &#container-light-main {
+//       padding-top: 80px;
+//     }
+//   }
+// }
 
 #burger {
   width: 6px;
@@ -243,6 +250,7 @@ nav {
     position: absolute !important;
     top: -32px;
     width: 76%;
+    max-width: 968px;
 
     display: none;
   }
@@ -388,7 +396,7 @@ nav {
       .black-breakup-top-image {
         width: 590px !important;
         top: 24px;
-        left: 53%;
+        left: 57%;
       }
     }
   }
@@ -396,9 +404,13 @@ nav {
 @include media-breakpoint-up(lg) {
   .black-breakup {
     &#black-breakup-top {
+      p.big-dark {
+        text-align: left;
+      }
+
       .black-breakup-top-image {
         width: 640px !important;
-        top: 14px;
+        top: -35px;
         left: 64%;
       }
     }
@@ -408,8 +420,7 @@ nav {
   .black-breakup {
     &#black-breakup-top {
       .black-breakup-top-image {
-        top: 5px;
-        left: 66%;
+        // left: 66%;
       }
     }
   }
@@ -516,8 +527,6 @@ h4 {
   text-transform: uppercase;
 }
 
-
-
 main {
   :not(code) ul li a:empty,
   :not(code) ol li a:empty,
@@ -556,7 +565,7 @@ main {
   line-height: 17px;
 }
 @include media-breakpoint-up(sm) {
-  #topshelf p {
+  #topshelf p, #black-breakup-bottom p {
     font-size: 18px;
     line-height: 29px;
     font-weight: 300;
@@ -609,11 +618,25 @@ p {
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 100 !important;
     letter-spacing: 1.73px;
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  p.massive {
+    font-size: 60px !important;
+    line-height: 72px !important;
+  }
+}
+@include media-breakpoint-up(lg) {
+  #black-breakup-bottom {
+    p.massive {
+      line-height: 41px !important;
+    }
   }
 }
 
@@ -633,6 +656,38 @@ p {
   background-position-y: 8px;
   padding-left: 22px;
 
+  .description p {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    line-height: 21px !important;
+  }
+
+  h4 {
+    margin-bottom: 4px;
+  }
+
+  a.learn-more-link {
+    color: #18181A;
+    font-family: 'Prompt', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2.3px;
+    line-height: 18px;
+
+    box-sizing: border-box;
+    border-bottom: 3px solid #DB4355;
+
+    margin-top: 2px;
+    margin-bottom: 38px;
+    display: inline-block;
+
+    &:after {
+      content: '▶';
+      font-size: 0.9em;
+    }
+  }
+
   p {
     color: #625C5C;
     font-family: 'Montserrat', sans-serif;
@@ -640,6 +695,14 @@ p {
     font-weight: 300;
     letter-spacing: -0.2px;
     line-height: 14px;
+  }
+}
+@include media-breakpoint-up(sm) {
+  .selling-point .inside-point {
+    .description p {
+      font-size: 18px !important;
+      line-height: 38px !important;
+    }
   }
 }
 

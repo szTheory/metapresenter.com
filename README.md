@@ -10,6 +10,7 @@
 * Sticky white nav for lg+ sizes
 * CSS for desktop size
 * CSS for tablet size
+* Point the "Learn More" anchors from the instructions section to relevant parts of /readme
 * trim the escher background CSS image to relevant portions to reduce image filesize
 * include the header at layout level so that it shows for /readme as well
 * Spell check site
@@ -17,3 +18,4 @@
 * move all remaining hardcoded copy to DatoCMS
 * add simple full-text search to README with LunrJS
 * use the new CSS image set attribute to only load mobile assets on mobile version (reduce load time)
+* read current version number in the footer from the Rubygems repo using their API

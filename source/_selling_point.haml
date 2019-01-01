@@ -1,10 +1,12 @@
-%li.selling-point.row.justify-content-center.mt-5
+.selling-point.row.justify-content-center.mt-5
   .col.col-lg-8
     = partial 'step_number', locals: {number: number}
     .inside-point{style: background_image('images/red-rectangle.png')}
       %h4 #{message}
       - if description.present?
-        %p #{description}
+        .description #{markdown(description.strip)}
+        / = link_to '/readme', class: 'upcase learn-more-link' do
+        /   Learn More
     .mb-1
       = code(syntax_language) do
         #{code_block}

@@ -79,14 +79,14 @@
 #black-breakup-top.black-breakup{style: background_image('images/steps-intro-mobile.jpg', 'images/steps-intro.png')}
   = image_tag 'images/diagonal-slice-rectangle.png', class: 'img-fluid diagonal-slice'
   .container-fluid
-    .row
-      .col
+    .row.justify-content-center
+      .col.col-lg-10.col-xl-8
         .container-fluid.text-center
-          .row.justify-content-center
+          .row.justify-content-center.justify-content-lg-start
             = image_tag 'images/red-three-dots.png', id: 'red-three-dots'
-          .row.justify-content-center
+          .row.justify-content-center.justify-content-lg-start
             %p.big-dark Decompose your helper logic into tight, easily-testable classes
-          .row.justify-content-center
+          .row.justify-content-center.justify-content-lg-start
             %p.massive In 4 simple steps
     = image_tag 'images/overlay-shape-large.png', class: 'black-breakup-top-image large'
   = image_tag 'images/overlay-shape.png', class: 'black-breakup-top-image img-fluid small'
@@ -94,7 +94,7 @@
 #container-light-main.container-light.container-steps.container-fluid
   .row
     .col
-      %ul.container-fluid
+      .container-fluid
         - dato.home.steps.each.with_index do |step, i|
           = partial 'selling_point', locals: {number: i+1, message: step.message, description: step.description, code_block: step.code, syntax_language: step.syntax_language}
 
@@ -106,20 +106,20 @@
     .row.justify-content-center.justify-content-lg-left
       .col.col-sm-10.col-lg-6.offset-lg-6.col-xl-5.offset-xl-5
         .container-fluid.text-center
-          .row.justify-content-center.justify-content-lg-left
+          .row.justify-content-center.justify-content-lg-left.mt-lg-5
             = image_tag 'images/red-three-dots.png', id: 'red-three-dots'
           .row.justify-content-center.justify-content-lg-left
             %p.big-dark Are you ready to
           .row.justify-content-center.justify-content-lg-left
             %p.massive Give it a try?
           .row.justify-content-center.justify-content-lg-left
-            = image_tag 'images/line-bottom.png', class: 'step-number-line img-fluid mb-2'
+            = image_tag 'images/line-bottom.png', class: 'step-number-line img-fluid mb-2 mt-lg-4 mt-sm-2'
           .row.justify-content-center.justify-content-lg-left
-            = image_tag 'images/line-bottom.png', class: 'step-number-line img-fluid mb-3'
-          .row.justify-content-center.justify-content-lg-left
+            = image_tag 'images/line-bottom.png', class: 'step-number-line img-fluid mb-3 mb-lg-4'
+          .row.justify-content-center.justify-content-lg-left.mt-lg-2
             .col-11
               %p.mt-1 If you're ready to start beautifying your code in one simple step, visit the GitHub page to grab MetaPresenter or to learn more about it.
-          .row.justify-content-center.justify-content-lg-left
+          .row.justify-content-center.justify-content-lg-left.mt-lg-2
             .col-11.col-lg-8
               = link_to dato.application.github_url, class: 'cta' do
                 %h3 Get started now
@@ -149,4 +149,4 @@
         .container-fluid
           .row
             .col.d-flex.justify-content-center.justify-content-lg-start
-              %p.mt-4 MetaPresenter as well as the contents of this website developed and © 2018 by szTheory. Current Version #{dato.application.current_version_number}
+              %p.mt-4 MetaPresenter as well as the contents of this website developed and © #{Time.new.year} by szTheory. Current Version #{dato.application.current_version_number}
