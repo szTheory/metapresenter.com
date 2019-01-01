@@ -1,6 +1,7 @@
-%nav.navbar.navbar-expand-lg
+%nav.navbar.navbar-expand-lg.fixed-top
   = link_to '/', class: 'navbar-brand' do
-    = image_tag 'images/logo.png', id: 'logo'
+    = image_tag 'images/logo.png', class: 'logo main'
+    = image_tag 'images/logo-inverted.png', class: 'logo inverted'
   %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
     = image_tag 'images/burger.png', id: 'burger'
   #navbarNav.collapse.navbar-collapse

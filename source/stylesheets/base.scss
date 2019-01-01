@@ -711,13 +711,63 @@ main {
   overflow-y: visible;
 }
 
+// fixed top white BG nav
+@include media-breakpoint-up(lg) {
+  nav.scrolled {
+    background-color: white;
+
+    .nav-link {
+      color: #18181A !important;
+    }
+
+    .logo {
+      &.main {
+        display: none !important;
+      }
+      &.inverted {
+        display: inline-block !important;
+      }
+    }
+
+    .github {
+      .box {
+        border-color: #787A8E !important;
+        color: #787A8E !important;
+        font-weight: regular;
+      }
+
+      * {
+        color: #787A8E !important;
+      }
+
+      .stargazers-count {
+        color: #333 !important;
+      }  
+    }
+
+    .get-started-button {
+      border-color: #FFF !important;
+
+      h3 {
+        background-color: #DB4355 !important;
+      }
+    }
+  }
+}
 nav {
   a.navbar-brand {
     line-height: 15px;
 
-    #logo {
+    .logo {
       width: 152px;
       height: 15px;
+
+      &.main {
+        display: inline-block;  
+      }
+      &.inverted {
+        display: none;
+      }
     }
   }
 

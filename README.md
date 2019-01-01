@@ -7,7 +7,6 @@
 ## TODO
 * Add explanatory paragraphs next to each step on instructions section
 * Instructions section two-column styling for lg/xl screens
-* Sticky white nav for lg+ sizes
 * CSS for desktop size
 * CSS for tablet size
 * Point the "Learn More" anchors from the instructions section to relevant parts of /readme
