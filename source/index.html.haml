@@ -9,14 +9,14 @@
           .row.justify-content-center
             #animated-text-container.col.mb-2
               %p
-                %span Ruby
-                %span Rails
+                %span #{dato.home.animated_header_1}
+                %span #{dato.home.animated_header_2}
               %p
-                %span Rails
-                %span Presenter
+                %span #{dato.home.animated_header_2}
+                %span #{dato.home.animated_header_3}
               %p
-                %span Presenter
-                %span Classes
+                %span #{dato.home.animated_header_3}
+                %span #{dato.home.animated_header_4}
           #hero.row.justify-content-center.mt-4
             .col.col-lg-11.col-xl-10
               = image_tag 'images/hero-title.png', class: 'img-fluid mb-3 hero-title hero-title-sm'
@@ -26,23 +26,18 @@
                   .col.col-lg-2.hero-linework-col
                     = image_tag 'images/hero-linework.png', class: 'hero-linework hero-linework-left'
                   .col.col-lg-8
-                    %h3.mb-3 It's time to beautify your Rails views
+                    %h3.mb-3 #{dato.home.subheader}
                   .col.col-lg-2.hero-linework-col
                     = image_tag 'images/hero-linework.png', class: 'hero-linework hero-linework-right'
-              %p
-                %span
-                  MetaPresenter is a
-                  %strong 100% free
-                  Ruby gem for the view presenter pattern.
-                %span.non-mobile
-                  Pull yourself out of the vortex of messy views and start writing beautiful frontend code that will &ldquo;wow&rdquo; colleagues.
-              %p.text-center To install just add to your Gemfile and bundle:
+              %span.mobile #{markdown(dato.home.description_1)}
+              %span.non-mobile #{markdown(dato.home.description_non_mobile)}
+              %p.text-center #{dato.home.install_header}
 
           .row.justify-content-center
             .col.col-lg-4
               #install-instructions.text-left
                 = code('ruby') do
-                  gem 'meta_presenter' 
+                  gem 'meta_presenter'
                 = code('sh') do
                   $ bundle install
   = image_tag 'images/fold-slash-white.png', class: 'img-fluid fold-slash-white'
@@ -64,7 +59,7 @@
                 .col.col-sm-3.linework-col
                   = image_tag 'images/linework.png', class: 'linework linework-left'
                 .col.col-sm-6
-                  %h3.mt-4 How does it work?
+                  %h3.mt-4 #{dato.home.how_does_it_work_header}
                 .col.col-sm-3.linework-col
                   = image_tag 'images/linework.png', class: 'linework linework-right'
             .container-fluid

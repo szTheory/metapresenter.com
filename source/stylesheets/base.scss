@@ -645,6 +645,9 @@ p {
 }
 
 @include media-breakpoint-up(sm) {
+  .mobile {
+    display: none;
+  }
   .non-mobile {
     display: inline;
   }
