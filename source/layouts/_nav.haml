@@ -1,9 +1,9 @@
 %nav.navbar.navbar-expand-lg
   = link_to '/', class: 'navbar-brand' do
-    = image_tag 'images/logo.min.png', class: 'logo main'
-    = image_tag 'images/logo-inverted.min.png', class: 'logo inverted'
+    = image_tag 'images/logo.min.png', class: 'logo main', alt: "MetaPresenter"
+    = image_tag 'images/logo-inverted.min.png', class: 'logo inverted', alt: ''
   %button.navbar-toggler{"aria-controls" => "navbarNav", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNav", "data-toggle" => "collapse", :type => "button"}
-    = image_tag 'images/burger.min.png', id: 'burger'
+    = image_tag 'images/burger.min.png', id: 'burger', alt: ''
   #navbarNav.collapse.navbar-collapse
     %ul.nav.navbar-nav.ml-auto
       - dato.nav.nav_items.each.with_index do |nav_item, i|
