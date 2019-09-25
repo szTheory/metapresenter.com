@@ -1,18 +1,23 @@
+var throttle = require('lodash.throttle')
+
 const scrollLimit = 1
+let $nav = null
 
 $(document).ready(function() {
-  window.onscroll = function() {
+  $nav = $('nav')
+
+  window.onscroll = throttle(function() {
     scrollFunction()
-  }
+  }, 100)
+
   scrollFunction()
 })
 
 function scrollFunction() {
-  const nav = $('nav')
 
   if (document.body.scrollTop > scrollLimit || document.documentElement.scrollTop > scrollLimit) {
-    nav.addClass('scrolled');
+    $nav.addClass('scrolled');
   } else {
-    nav.removeClass('scrolled');
+    $nav.removeClass('scrolled');
   }
 }

@@ -1,7 +1,9 @@
 import graphql from 'graphql.js'
 
 $(document).ready(function () {
-  setupStargazerCounters();
+  setTimeout(() => {
+    setupStargazerCounters();
+  }, 0);
 });
 
 function setupStargazerCounters() {
