@@ -67,6 +67,8 @@ gem 'oj' # faster JS compiles
 # MIDDLEMAN BOOTSTRAP
 # gem 'bh', '~> 1.3' #middleman bootstrap helpers
 
+gem 'solargraph', group: :development
+
 # PLATFORM COMPAT.
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
