@@ -1,5 +1,3 @@
-require "uglifier"
-
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
@@ -98,18 +96,9 @@ configure :development do
 end
 
 configure :build do
-  # Minify css on build
-  activate :minify_css
-
-  # Minify Javascript on build
-  activate :minify_javascript, compressor: ::Uglifier.new(harmony: true, mangle: true, compress: {drop_console: true}, output: {comments: :none})
-
-  # # Image optimization on build
-  # activate :imageoptim 
-
   # Use Gzip
   activate :gzip
 
   #Use asset hashes to use for caching
-  #activate :asset_hash
+  activate :asset_hash
 end
