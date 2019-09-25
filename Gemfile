@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
 # MIDDLEMAN
-gem 'middleman', '~> 4.2.1'
+# gem 'middleman', '~> 4.2.1'
+gem 'middleman', '4.3.0' #build breaks starting with 4.3.1
 
 # MIDDLEMAN MISC TOOLS
 gem 'middleman-autoprefixer' #CSS browser compat. with vendor-specific prefixes
