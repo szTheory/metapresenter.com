@@ -25,7 +25,6 @@ module.exports = {
 
   plugins: [
     new webpack.ProvidePlugin({
-      // TODO: remove jquery dep
       $: "jquery",
     }),
 

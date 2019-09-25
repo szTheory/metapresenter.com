@@ -1,6 +1,6 @@
 import graphql from 'graphql.js'
 
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function() {
   setTimeout(() => {
     setupStargazerCounters();
   }, 0);
