@@ -1,14 +1,12 @@
 import graphql from 'graphql.js'
 
 document.addEventListener("DOMContentLoaded", function() {
-  console.log("DOMContentLoaded")
   setTimeout(() => {
     setupStargazerCounters();
   }, 0);
 });
 
 function setupStargazerCounters() {
-  console.log("setupStargazerCounters")
   stargazersCount().then(function(stargazersCount) {
     $('.stargazers-count').each(function() {
       $(this).text(stargazersCount);

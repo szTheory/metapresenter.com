@@ -6,7 +6,6 @@ const SCROLLED_CLASS = 'scrolled'
 let navElem = null
 
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("navscroll DOMContentLoaded")
   navElem = document.querySelector('nav')
 
   // callback to update on scroll
