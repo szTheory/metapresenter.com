@@ -44,8 +44,7 @@ gem 'slim'
 gem 'redcarpet' #markdown
 
 # minify JS
-# gem 'therubyracer' # faster JS compiles
-gem 'mini_racer'
+# gem 'mini_racer' # faster JS compiles
 gem 'oj' # faster JS compiles
 
 # MIDDLEMAN USEFUL
