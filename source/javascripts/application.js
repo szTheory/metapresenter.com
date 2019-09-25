@@ -12,5 +12,4 @@ import './navscroll'
 function requireAll(r) {
   r.keys().forEach(r);
 }
-requireAll(require.context('../fonts/', true));
 requireAll(require.context('../images/', true));

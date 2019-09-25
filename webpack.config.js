@@ -20,7 +20,6 @@ module.exports = {
     ],
     alias: {
       'images': path.resolve('./source/images'),
-      'fonts': path.resolve('./source/fonts')
     }
   },
 
