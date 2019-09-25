@@ -17,8 +17,8 @@
 * Move all remaining hardcoded copy to DatoCMS
 
 ## TODO (Nice to have)
-//* Use the new CSS image set attribute to only load mobile assets on mobile version (reduce load time)
-//* Add explanatory paragraphs next to each step on instructions section
-//* Instructions section two-column styling for lg/xl screens
-//* Point the "Learn More" anchors from the instructions section to relevant parts of /readme
-//* Add simple full-text search to README with LunrJS
+* Use the new CSS image set attribute to only load mobile assets on mobile version (reduce load time)
+* Add explanatory paragraphs next to each step on instructions section
+* Instructions section two-column styling for lg/xl screens
+* Point the "Learn More" anchors from the instructions section to relevant parts of /readme
+* Add simple full-text search to README with LunrJS
