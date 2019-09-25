@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/771bf805-4196-47d8-9da1-9017d800c403/deploy-status)](https://app.netlify.com/sites/metapresenter/deploys)
 
-[Website](https://metapresenter.com) for the [Ruby gem meta_presenter](https://github.com/szTheory/meta_presenter). Built with Middleman for SSG, deployed to Netlify, using DatoCMS for content. MIT license.
+[Website](https://metapresenter.com) for the [Ruby gem meta_presenter](https://github.com/szTheory/meta_presenter). Built with Middleman for SSG, Webpack for asset build, deployed to Netlify, using DatoCMS for content. MIT license.
 
 ![screenshot-mobile-metapresentercom](https://user-images.githubusercontent.com/28652/50569999-16a08080-0d46-11e9-9e6a-7c89003b6e33.jpeg)
 
