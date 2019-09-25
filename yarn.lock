@@ -3045,10 +3045,10 @@ graceful-fs@^4.1.10, graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
   integrity sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
 
-graphql.js@^0.6.1:
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/graphql.js/-/graphql.js-0.6.5.tgz#6be088d3d7368bd028eb43c31ef53671bf9e7fa0"
-  integrity sha512-C9hwTP8COeKlodFJ8f+AKqZYtwIJRaEf9p+njyqqqMF/YypRLZ+o2SvL/0ykmYooBlCYb2eGPk66x1nqBTZeMQ==
+graphql.js@0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/graphql.js/-/graphql.js-0.6.2.tgz#1323bcc333a4e046cd5e3733d9da2959341ce3f4"
+  integrity sha512-CJZw6JKvbcDJjCN6KrpJEpv+B4gzSEC3V8pn8UNnyGF5CChEozh24cvJf1nVhRCXY6yPsF/Kwx2yqW/va9aaeQ==
 
 har-schema@^2.0.0:
   version "2.0.0"
