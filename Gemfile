@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'middleman', '4.3.0' #build breaks starting with 4.3.1
 
 # MIDDLEMAN MISC TOOLS
-gem 'middleman-autoprefixer' #CSS browser compat. with vendor-specific prefixes
+# gem 'middleman-autoprefixer' #CSS browser compat. with vendor-specific prefixes
 gem 'middleman-minify-html' #minify HTML
 # gem 'middleman-protect-emails' #email obfuscation to protect from spambots
 # TODO: relies on Middleman ~> 3.2, try to update gem
@@ -44,7 +44,8 @@ gem 'slim'
 gem 'redcarpet' #markdown
 
 # minify JS
-# gem 'mini_racer' # faster JS compiles
+# gem 'therubyracer' # faster JS compiles
+gem 'mini_racer'
 gem 'oj' # faster JS compiles
 
 # MIDDLEMAN USEFUL

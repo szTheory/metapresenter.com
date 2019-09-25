@@ -22,9 +22,9 @@ activate :minify_html #minifies whitespace around HTML via Htmlcompressor
 # Add browser-specific prefixes to stylesheet for compatibility with newest CSS features
 # NOTE: used to put this in build since it slowed down dev,
 # but it seems to be fast enough with webpacker for now
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
+# activate :autoprefixer do |prefix|
+#   prefix.browsers = "last 2 versions"
+# end
 activate :dato, live_reload: true
 # webpack
 activate :external_pipeline,
