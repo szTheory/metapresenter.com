@@ -66,10 +66,10 @@
               .row.justify-content-center
                 .col.col-lg-10.col-xl-8
                   %p.big
-                    For each Rails controller action you get a presenter class. It's accessible from views with
+                    Each Rails controller/action gets its own presenter class that views call with
                     / %code presenter.method_name
                     %strong presenter.method_name
-                  %p.big Can also delegate to controller methods for easy code re-use.
+                    \. Presenters can also delegate to objects, or any method from the controller.
 
 #black-breakup-top.black-breakup{style: background_image('images/steps-intro-mobile.min.jpg', 'images/steps-intro.min.png')}
   = image_tag 'images/diagonal-slice-rectangle.min.png', class: 'img-fluid diagonal-slice'
