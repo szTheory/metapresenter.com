@@ -1,7 +1,7 @@
 .selling-point.row.justify-content-center.mt-5
   .col.col-lg-8
     = partial 'step_number', locals: {number: number}
-    .inside-point{style: background_image('images/red-rectangle.png')}
+    .inside-point{style: background_image('images/red-rectangle.min.png')}
       %h4 #{message}
       - if description.present?
         .description #{markdown(description.strip)}
