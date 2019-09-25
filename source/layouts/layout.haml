@@ -2,6 +2,9 @@
 %html
   %head
     = partial 'layouts/meta'
+    %link{rel: "preconnect", href: "//fonts.googleapis.com"}
+    %link{rel: "preconnect", href: "//fonts.static.com"}
+    %link{rel: "preconnect", href: "//api.github.com"}
     - unless development?
       = partial 'layouts/ga_top'
     = stylesheet_link_tag 'application'
@@ -9,7 +12,7 @@
       = partial 'layouts/ga_bottom'
     %script{crossorigin: "anonymous", defer: "defer", integrity: "sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0", src: "https://use.fontawesome.com/releases/v5.5.0/js/all.js"}
     = javascript_include_tag 'application', async: true, defer: true
-    
+
   %body
     %main.main-content
       = yield
