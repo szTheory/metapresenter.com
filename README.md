@@ -16,17 +16,18 @@
 
 ## TODO (Important)
 
-- Add parallax effects
+- Fix Github Stars API call unreliability
 - Hover states on buttons
-- Read current version number in the footer from the Rubygems repo using their API
 - Rails and Github logos are getting distorted
 - Align the mobile menu with the Invision mockup
 - Spell check site
 - Test in different browsers, on mobile too (IE, FF, Chrome, Safari)
-- Move all remaining hardcoded copy to DatoCMS
 
 ## TODO (Nice to have)
 
+- Read current version number in the footer from the Rubygems repo using their API
+- Move all remaining hardcoded copy to DatoCMS (or move from DatoCMS to inline?)
+- Add parallax effects
 - Use the new CSS image set attribute to only load mobile assets on mobile version (reduce load time)
 - Add explanatory paragraphs next to each step on instructions section
 - Instructions section two-column styling for lg/xl screens
