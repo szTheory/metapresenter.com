@@ -16,7 +16,6 @@
 
 ## TODO (Important)
 
-- Fix Github Stars API call unreliability
 - Hover states on buttons
 - Rails and Github logos are getting distorted
 - Align the mobile menu with the Invision mockup

@@ -1,27 +1,22 @@
-import graphql from 'graphql.js'
+import graphql from "graphql.js";
 
-document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(() => {
-    setupStargazerCounters();
-  }, 0);
-});
-
-function setupStargazerCounters() {
-  stargazersCount().then(function(stargazersCount) {
-    $('.stargazers-count').each(function() {
-      $(this).text(stargazersCount);
+export const setupStargazerCounters = function() {
+  stargazersCount()
+    .then(function(stargazersCount) {
+      $(".stargazers-count").each(function() {
+        $(this).text(stargazersCount);
+      });
     })
-  }).catch(function() {
-  })
-}
+    .catch(function() {});
+};
 
 function stargazersCount() {
   // API key with public access only (no scopes enabled)
-  const token = 'a7209614753aae0048e76bd58055209755640713';
+  const token = "a7209614753aae0048e76bd58055209755640713";
 
   var graph = graphql("https://api.github.com/graphql", {
     headers: {
-      "Authorization": "token "+token,
+      Authorization: "token " + token
     },
     asJSON: true
   });
@@ -37,11 +32,13 @@ function stargazersCount() {
   `)({
     name: "meta_presenter",
     owner: "szTheory"
-  }).then(function(response) {
-    // console.log(response);
-    return response.repository.stargazers.totalCount;
-  }).catch(function(error) {
-    console.log(error);
-    return -1;
-  });
+  })
+    .then(function(response) {
+      // console.log(response);
+      return response.repository.stargazers.totalCount;
+    })
+    .catch(function(error) {
+      console.log(error);
+      return -1;
+    });
 }
