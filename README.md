@@ -14,6 +14,12 @@
 
 3. Navigate to http://localhost:4567 in your browser
 
+## Build command for deploy
+
+```bash
+gem install bundler -v '2.0.2' && middleman build --verbose
+```
+
 ## TODO (Important)
 
 - Hover states on buttons
@@ -31,4 +37,3 @@
 - Add explanatory paragraphs next to each step on instructions section
 - Instructions section two-column styling for lg/xl screens
 - Point the "Learn More" anchors from the instructions section to relevant parts of /readme
-- Add simple full-text search to README with LunrJS
