@@ -3,11 +3,11 @@ var throttle = require("lodash.throttle");
 const SCROLL_LIMIT = 1;
 const SCROLLED_CLASS = "scrolled";
 
-export const setupScroll = function() {
+export const setupScroll = function () {
   let navElem = document.querySelector("nav");
 
   // callback to update on scroll
-  window.onscroll = throttle(function() {
+  window.onscroll = throttle(function () {
     scrollFunction({ navElem: navElem });
   }, 100);
 

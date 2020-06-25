@@ -1,14 +1,14 @@
-export const runWithDelay = function({ callbackFunction }) {
+export const runWithDelay = function ({ callbackFunction }) {
   run({
-    callbackFunction: function() {
+    callbackFunction: function () {
       setTimeout(() => {
         callbackFunction();
       }, 0);
-    }
+    },
   });
 };
 
-export const runAsap = function({ callbackFunction }) {
+export const runAsap = function ({ callbackFunction }) {
   runWithDelay({ callbackFunction: callbackFunction, delay: 0 });
 };
 
@@ -24,7 +24,7 @@ function run({ callbackFunction }) {
   } else if (document.addEventListener) {
     document.addEventListener("DOMContentLoaded", callbackFunction());
   } else if (document.attachEvent) {
-    document.attachEvent("onreadystatechange", function() {
+    document.attachEvent("onreadystatechange", function () {
       if (document.readyState != "loading") {
         callbackFunction();
       }
