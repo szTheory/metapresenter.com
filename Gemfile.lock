@@ -68,7 +68,7 @@ GEM
     imgix (3.1.1)
       addressable
     jaro_winkler (1.5.3)
-    json (2.2.0)
+    json (2.3.1)
     json_schema (0.20.8)
     kramdown (1.17.0)
     libv8 (7.3.492.27.1)
