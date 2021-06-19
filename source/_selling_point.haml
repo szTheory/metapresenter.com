@@ -5,8 +5,6 @@
       %h4 #{message}
       - if description.present?
         .description #{markdown(description.strip)}
-        / = link_to '/readme', class: 'upcase learn-more-link' do
-        /   Learn More
     .mb-1
       = code(syntax_language) do
         #{code_block}

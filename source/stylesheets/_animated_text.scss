@@ -1,84 +1,88 @@
 @font-face {
-  font-family: 'Monoton';
+  font-family: "Monoton";
   font-style: normal;
   font-weight: 400;
-  src: local('Monoton'), local('Monoton-Regular'), url(https://fonts.gstatic.com/s/monoton/v7/5h1aiZUrOngCibe4TkHLQka4BU4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: local("Monoton"), local("Monoton-Regular"),
+    url(https://fonts.gstatic.com/s/monoton/v7/5h1aiZUrOngCibe4TkHLQka4BU4.woff2)
+      format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 #animated-text-container {
-	height: 194px;
+  height: 194px;
   position: relative;
   top: 80px;
   z-index: -1;
 }
 
 #animated-text-container p {
-	color: white;
-	font-size: 26px;
-	font-family: sans-serif;
-	text-transform: uppercase;
+  color: white;
+  font-size: 26px;
+  font-family: sans-serif;
+  text-transform: uppercase;
   font-family: "Monoton", sans-serif;
-  text-rendering: optimizeLegibility; 
-	height: 1em;
-	overflow: hidden;
-	position: relative;
-	right: 1em;
+  text-rendering: optimizeLegibility;
+  height: 1em;
+  overflow: hidden;
+  position: relative;
+  right: 1em;
   margin-bottom: 0;
 }
 
 @include media-breakpoint-up(sm) {
   #animated-text-container {
-  	height: 170px;
-  	p {
-	    font-size: 28px;
-	  }
-	}
+    height: 170px;
+    p {
+      font-size: 28px;
+    }
+  }
 }
 
 @include media-breakpoint-up(md) {
   #animated-text-container {
-  	height: 210px;
-  	p {
-	    font-size: 34px;
-	  }
-	}
+    height: 210px;
+    p {
+      font-size: 34px;
+    }
+  }
 }
 
 @include media-breakpoint-up(lg) {
   #animated-text-container {
-  	height: 240px;
-  	p {
-	    font-size: 40px;
-	  }
-	}
+    height: 240px;
+    p {
+      font-size: 40px;
+    }
+  }
 }
 
 #animated-text-container p:nth-child(odd) {
-	transform: skewY(-30deg) skewX(45deg) scaleY(1.3333);
+  transform: skewY(-30deg) skewX(45deg) scaleY(1.3333);
 }
 
 #animated-text-container p:nth-child(even) {
-	transform: skewY(-30deg) scaleY(1.3333);
+  transform: skewY(-30deg) scaleY(1.3333);
 }
 
 #animated-text-container p:nth-child(2) {
-	margin-left: 1.3em;
+  margin-left: 1.3em;
 }
 
 #animated-text-container p:nth-child(3) {
-	margin-left: 2.6em;
+  margin-left: 2.6em;
 }
 
 #animated-text-container p span {
-	display: block;
-	text-align: center;
-	line-height: 1em;
-	animation: lettering 3s infinite ease-in-out alternate;
+  display: block;
+  text-align: center;
+  line-height: 1em;
+  animation: lettering 3s infinite ease-in-out alternate;
 }
 
 @keyframes lettering {
-	to {
-		transform: translateY(-100%);
-	}
+  to {
+    transform: translateY(-100%);
+  }
 }

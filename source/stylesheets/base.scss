@@ -23,9 +23,6 @@ nav {
         height: 23px;
         margin-top: 12px;
 
-        &.hero-linework-left {
-        }
-
         &.hero-linework-right {
           -moz-transform: scaleX(-1);
           -o-transform: scaleX(-1);
@@ -70,9 +67,6 @@ nav {
     width: 100%;
     height: 24px;
     margin-top: 35px;
-
-    &.linework-left {
-    }
 
     &.linework-right {
       -moz-transform: scaleX(-1);
@@ -132,13 +126,6 @@ nav {
     padding-bottom: 80px;
   }
 }
-// @include media-breakpoint-up(sm) {
-//   .container-light {
-//     &#container-light-main {
-//       padding-top: 80px;
-//     }
-//   }
-// }
 
 #burger {
   width: 6px;
@@ -146,7 +133,6 @@ nav {
 }
 
 .hero-title {
-
   &.hero-title-lg {
     display: none;
   }
@@ -183,8 +169,8 @@ nav {
   }
 }
 .learnmore {
-  color: #787A8E;
-  font-family: 'Montserrat', sans-serif;
+  color: #787a8e;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3.73px;
@@ -258,7 +244,7 @@ nav {
   &#black-breakup-top {
     background-color: white;
 
-    &> .container-fluid {
+    & > .container-fluid {
       padding-top: 60px;
     }
 
@@ -311,7 +297,6 @@ nav {
 
 @include media-breakpoint-up(lg) {
   .black-breakup {
-
     #black-breakup-image {
       max-width: 468px !important;
     }
@@ -324,8 +309,8 @@ nav {
       background-size: 0, 100% 100%;
       background-repeat: no-repeat, no-repeat;
 
-
-      .row, .row > * {
+      .row,
+      .row > * {
         text-align: left !important;
         justify-content: left !important;
         padding-left: 0;
@@ -346,7 +331,6 @@ nav {
   }
 }
 
-
 @include media-breakpoint-up(sm) {
   .black-breakup {
     .diagonal-slice {
@@ -366,7 +350,7 @@ nav {
     &#black-breakup-top {
       background-size: 0 0, 1959px 378px;
 
-      &> .container-fluid {
+      & > .container-fluid {
         height: 264px;
       }
 
@@ -389,7 +373,7 @@ nav {
 @include media-breakpoint-up(md) {
   .black-breakup {
     &#black-breakup-top {
-      &> .container-fluid {
+      & > .container-fluid {
         height: 239px;
       }
 
@@ -416,19 +400,10 @@ nav {
     }
   }
 }
-@include media-breakpoint-up(xl) {
-  .black-breakup {
-    &#black-breakup-top {
-      .black-breakup-top-image {
-        // left: 66%;
-      }
-    }
-  }
-}
 
 .step-number {
-  color: #787A8E;
-  font-family: 'Montserrat', sans-serif;
+  color: #787a8e;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
@@ -459,7 +434,7 @@ nav {
 
 .highlight {
   background-color: #18181a !important;
-  font-size: 0.60rem !important;
+  font-size: 0.6rem !important;
   padding: 1px 3px;
   margin: 0;
 }
@@ -474,16 +449,18 @@ nav {
   }
 }
 
-h1, h2, h4 {
+h1,
+h2,
+h4 {
   color: white;
 }
 
 h3 {
   margin: 0;
-  color: #FFF;
-  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  
+
   font-weight: 300;
   font-size: 11px;
   letter-spacing: 3.53px;
@@ -491,7 +468,7 @@ h3 {
   vertical-align: middle;
   display: inline-block;
   text-align: center;
-  background-color: #DB4355;
+  background-color: #db4355;
   padding: 10px 16px;
   width: 100%;
 
@@ -515,8 +492,8 @@ a.cta {
 }
 
 h4 {
-  color: #1E242B;
-  font-family: 'Montserrat', sans-serif;
+  color: #1e242b;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 800;
   letter-spacing: 1.63px;
@@ -531,8 +508,8 @@ main {
   :not(code) ul li a:empty,
   :not(code) ol li a:empty,
   :not(code) a:empty {
-    color: #18181A;
-    font-family: 'Prompt', sans-serif;
+    color: #18181a;
+    font-family: "Prompt", sans-serif;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 2.3px;
@@ -541,31 +518,21 @@ main {
     border-bottom: 2px solid #cf2c44;
 
     &:after {
-      content: '▶';
+      content: "▶";
       font-size: 0.55em;
       position: relative;
       bottom: 2px;
       left: 4px;
     }
   }
-  #readme a {
-    color: white;
-  }
 }
-
-#readme {
-  :not(code) ul li,
-  :not(code) ol li {
-    color: #84858E;
-  }
-}
-
 
 #topshelf p {
   line-height: 17px;
 }
 @include media-breakpoint-up(sm) {
-  #topshelf p, #black-breakup-bottom p {
+  #topshelf p,
+  #black-breakup-bottom p {
     font-size: 18px;
     line-height: 29px;
     font-weight: 300;
@@ -579,10 +546,10 @@ main {
 }
 
 p {
-  color: #84858E; 
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;  
-  font-weight: 300; 
+  color: #84858e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
 
   strong {
     color: white;
@@ -604,8 +571,8 @@ p {
   }
 
   &.big-dark {
-    color: #787A8E;
-    font-family: 'Montserrat', sans-serif;
+    color: #787a8e;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 3.09px;
@@ -615,8 +582,8 @@ p {
   }
 
   &.massive {
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
     font-size: 30px;
     font-weight: 100 !important;
     letter-spacing: 1.73px;
@@ -671,29 +638,29 @@ p {
   }
 
   a.learn-more-link {
-    color: #18181A;
-    font-family: 'Prompt', sans-serif;
+    color: #18181a;
+    font-family: "Prompt", sans-serif;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 2.3px;
     line-height: 18px;
 
     box-sizing: border-box;
-    border-bottom: 3px solid #DB4355;
+    border-bottom: 3px solid #db4355;
 
     margin-top: 2px;
     margin-bottom: 38px;
     display: inline-block;
 
     &:after {
-      content: '▶';
+      content: "▶";
       font-size: 0.9em;
     }
   }
 
   p {
-    color: #625C5C;
-    font-family: 'Montserrat', sans-serif;
+    color: #625c5c;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 300;
     letter-spacing: -0.2px;
@@ -733,7 +700,7 @@ main {
     transition: 0.1s;
 
     .nav-link {
-      color: #18181A !important;
+      color: #18181a !important;
     }
 
     .logo {
@@ -745,27 +712,11 @@ main {
       }
     }
 
-    .github {
-      .box {
-        border-color: #787A8E !important;
-        color: #787A8E !important;
-        font-weight: regular;
-      }
-
-      * {
-        color: #787A8E !important;
-      }
-
-      .stargazers-count {
-        color: #333 !important;
-      }  
-    }
-
     .get-started-button {
-      border-color: #FFF !important;
+      border-color: #fff !important;
 
       h3 {
-        background-color: #DB4355 !important;
+        background-color: #db4355 !important;
       }
     }
   }
@@ -779,7 +730,7 @@ nav {
       height: 15px;
 
       &.main {
-        display: inline-block;  
+        display: inline-block;
       }
       &.inverted {
         display: none;
@@ -792,8 +743,8 @@ nav {
   }
 
   .nav-link {
-    color: #FFF;
-    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
@@ -810,7 +761,8 @@ nav {
     }
   }
 
-  .github, .get-started-button {
+  .github,
+  .get-started-button {
     display: none;
   }
 
@@ -826,23 +778,18 @@ nav {
     }
 
     * {
-      color: #DFDCDC;
+      color: #dfdcdc;
     }
-
-    .stargazers-count {
-      color: #787A8E;
-      padding-top: 7px;
-    }  
   }
 
   .get-started-button {
     box-sizing: border-box;
-    border: 2px solid #FFF;
+    border: 2px solid #fff;
 
     h3 {
       background-color: transparent !important;
-      color: #FFF;
-      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
       font-size: 14px;
       font-weight: 300;
       letter-spacing: 3.73px;
@@ -865,7 +812,8 @@ nav {
       }
     }
 
-    .github, .get-started-button {
+    .github,
+    .get-started-button {
       display: block;
     }
     .github {
@@ -903,12 +851,14 @@ nav {
 footer {
   padding-top: 70px;
   padding-bottom: 60px;
-  background-color: #D2D2DD;
+  background-color: #d2d2dd;
   text-align: center;
 
-  span, a, a:hover {
-    color: #9294A8;
-    font-family: 'Prompt', sans-serif;
+  span,
+  a,
+  a:hover {
+    color: #9294a8;
+    font-family: "Prompt", sans-serif;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 3.47px;
@@ -932,12 +882,12 @@ footer {
 
   .floatbar-wrapper {
     box-sizing: border-box;
-    border: 1px solid #B7BADB;
+    border: 1px solid #b7badb;
     background-color: white;
   }
 
   .get-started {
-    border-left: 1px solid #B7BADB;
+    border-left: 1px solid #b7badb;
     h3 {
       padding: 13px;
     }
@@ -956,8 +906,8 @@ footer {
   }
 
   * {
-    color: #787A8E;
-    font-family: 'Montserrat', sans-serif;
+    color: #787a8e;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
 
     &:hover {
@@ -969,15 +919,6 @@ footer {
     font-size: 22px;
     position: relative;
     top: 2px;
-  }
-
-  .stargazers-count {
-    color: #333;
-    width: 53px;
-    height: 36px;
-    text-align: center;
-    padding-top: 8px;
-    display: inline-block;
   }
 }
 
@@ -995,8 +936,4 @@ footer {
   #bottom-float-bar {
     display: none;
   }
-}
-
-#readme > .container {
-  padding-top: 100px;
 }

@@ -3066,11 +3066,6 @@ graceful-fs@^4.1.2:
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
   integrity sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
 
-graphql.js@0.6.2:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/graphql.js/-/graphql.js-0.6.2.tgz#1323bcc333a4e046cd5e3733d9da2959341ce3f4"
-  integrity sha512-CJZw6JKvbcDJjCN6KrpJEpv+B4gzSEC3V8pn8UNnyGF5CChEozh24cvJf1nVhRCXY6yPsF/Kwx2yqW/va9aaeQ==
-
 har-schema@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/har-schema/-/har-schema-2.0.0.tgz#a94c2224ebcac04782a0d9035521f24735b7ec92"

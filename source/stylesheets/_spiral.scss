@@ -10,12 +10,13 @@
   overflow: hidden;
 
   &:after {
-    content: '\A';
+    content: "\A";
     position: absolute;
-    width: 100%; height:100%;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.94);
+    background: rgba(0, 0, 0, 0.94);
     opacity: 1;
   }
 
@@ -29,9 +30,9 @@
     margin: -47% 0 0 -47%;
   }
 
-  .black { 
-    background: black;  
-    animation: rotate 200s infinite linear; 
+  .black {
+    background: black;
+    animation: rotate 200s infinite linear;
     transform: rotate(0deg);
     transition-duration: 200s;
     transition-property: transform;
@@ -39,11 +40,15 @@
 
   // @keyframes rotate {
   //   0% { transform: rotate(0deg); }
-  //   100% { transform: rotate(360deg); }  
+  //   100% { transform: rotate(360deg); }
   // }
   @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
   }
 }
 
