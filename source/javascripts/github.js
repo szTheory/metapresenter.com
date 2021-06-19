@@ -12,7 +12,7 @@ export const setupStargazerCounters = function () {
 
 function stargazersCount() {
   // API key with public access only (no scopes enabled)
-  const token = " e93138ad121244608b08c2e49cb0172ab296ae1b";
+  const token = "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";
 
   var graph = graphql("https://api.github.com/graphql", {
     headers: {
