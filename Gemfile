@@ -24,7 +24,6 @@ gem 'middleman-meta-tags' #meta tags for SEO
 gem 'middleman-robots' #generate robots.txt
 gem 'middleman-sitemap' #sitemap for search engines
 gem 'middleman-sitemap-ping' #ping search engines (Google/Bing) with sitemap URL
-gem 'middleman-google-analytics' #google analytics
 gem 'middleman-aria_current' #current_link_to for screen reader nav support
 
 # MIDDLEMAN HEADLESS CMS

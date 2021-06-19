@@ -12,7 +12,6 @@ requireAll(require.context("../images/", true));
 import "bootstrap/js/src/collapse";
 
 // app code
-import "./github";
 import "./navscroll";
 
 // app init

@@ -761,27 +761,6 @@ nav {
     }
   }
 
-  .github,
-  .get-started-button {
-    display: none;
-  }
-
-  .github {
-    margin-left: 10px;
-
-    .box {
-      box-sizing: border-box;
-      position: relative;
-      top: 2px;
-      padding: 8px 9px 7px 14px;
-      border: 1px solid #808080;
-    }
-
-    * {
-      color: #dfdcdc;
-    }
-  }
-
   .get-started-button {
     box-sizing: border-box;
     border: 2px solid #fff;
@@ -812,12 +791,8 @@ nav {
       }
     }
 
-    .github,
     .get-started-button {
       display: block;
-    }
-    .github {
-      margin-left: 4px;
     }
   }
 }
@@ -829,9 +804,6 @@ nav {
       h3 {
         padding: 25px 60px;
       }
-    }
-    .github {
-      margin-left: 80px;
     }
   }
 }
@@ -891,34 +863,6 @@ footer {
     h3 {
       padding: 13px;
     }
-  }
-}
-
-.github {
-  line-height: 20px;
-
-  display: flex;
-  align-items: center;
-
-  a {
-    display: inline-block;
-    width: 100%;
-  }
-
-  * {
-    color: #787a8e;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  .github-icon {
-    font-size: 22px;
-    position: relative;
-    top: 2px;
   }
 }
 
